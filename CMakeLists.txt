@@ -24,6 +24,7 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 set(HEADERS
   "include/components.h"
   "include/ui/MainWindow.h"
+  "include/ui/jx/JxHBoxLayout.h"
   "include/ui/jx/JxPushButton.h"
   "include/ui/jx/JxVBoxLayout.h"
   "include/ui/jx/JxWidget.h"
@@ -34,6 +35,7 @@ set(HEADERS
 set(SOURCES
   "src/main.cpp"
   "src/ui/MainWindow.cpp"
+  "src/ui/jx/JxHBoxLayout.cpp"
   "src/ui/jx/JxPushButton.cpp"
   "src/ui/jx/JxVBoxLayout.cpp"
   "src/ui/jx/JxWidget.cpp"
