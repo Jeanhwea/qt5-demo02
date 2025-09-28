@@ -1,5 +1,6 @@
 #include "ui/MainWindow.h"
 
+#include "components.h"
 #include "logger.h"
 #include "util.h"
 
