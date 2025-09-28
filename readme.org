@@ -1,0 +1,53 @@
+#+TITLE: DEMO 02
+#+AUTHOR: Jinghui Hu
+#+EMAIL: hujinghui@buaa.edu.cn
+#+DATE: <2025-09-28 Sun>
+#+STARTUP: overview num indent
+#+OPTIONS: ^:nil
+
+
+* 构建指令
+- 安装 vs2022 并配置 cmake/qt 开发环境
+#+BEGIN_SRC sh
+  cmake -B build
+  pkg
+#+END_SRC
+
+构建日志如下
+#+BEGIN_EXAMPLE
+  D:\code\GUI\demo02> cmake -B build
+  -- Building for: Visual Studio 17 2022
+  -- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.19045.
+  -- The CXX compiler identification is MSVC 19.44.35217.0
+  -- Detecting CXX compiler ABI info
+  -- Detecting CXX compiler ABI info - done
+  -- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+  -- Detecting CXX compile features
+  -- Detecting CXX compile features - done
+  -- Configuring done (2.3s)
+  -- Generating done (0.5s)
+  -- Build files have been written to: D:/code/GUI/demo02/build
+
+  D:\code\GUI\demo02> pkg
+  适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+    1>Checking Build System
+    Automatic MOC and UIC for target demo02
+    Building Custom Rule D:/code/GUI/demo02/CMakeLists.txt
+    mocs_compilation_Debug.cpp
+    main.cpp
+    MainWindow.cpp
+    JxHBoxLayout.cpp
+    JxPushButton.cpp
+    JxVBoxLayout.cpp
+    JxWidget.cpp
+    util.cpp
+    正在生成代码...
+  MSVCRTD.lib(initializers.obj) : warning LNK4098: 默认库“msvcrt.lib”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  [D:\code\GUI\de
+  mo02\build\demo02.vcxproj]
+    demo02.vcxproj -> D:\code\GUI\demo02\build\Debug\demo02.exe
+    Building Custom Rule D:/code/GUI/demo02/CMakeLists.txt
+
+  D:\code\GUI\demo02>
+#+END_EXAMPLE
