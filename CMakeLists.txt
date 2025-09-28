@@ -33,13 +33,13 @@ set(HEADERS
 
 # 源文件
 set(SOURCES
-  "src/main.cpp"
-  "src/ui/MainWindow.cpp"
-  "src/ui/jx/JxHBoxLayout.cpp"
-  "src/ui/jx/JxPushButton.cpp"
-  "src/ui/jx/JxVBoxLayout.cpp"
-  "src/ui/jx/JxWidget.cpp"
-  "src/util.cpp"
+  "source/main.cpp"
+  "source/ui/MainWindow.cpp"
+  "source/ui/jx/JxHBoxLayout.cpp"
+  "source/ui/jx/JxPushButton.cpp"
+  "source/ui/jx/JxVBoxLayout.cpp"
+  "source/ui/jx/JxWidget.cpp"
+  "source/util.cpp"
 )
 
 # 添加可执行文件

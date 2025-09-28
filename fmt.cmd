@@ -40,9 +40,9 @@ for /r "%PROJECT_DIR%\include" %%f in (*.h) do (
 
 echo.
 
-rem Format all source files in src directory
-echo. Formatting source files in src directory...
-for /r "%PROJECT_DIR%\src" %%f in (*.cpp, *.h) do (
+rem Format all source files in source directory
+echo. Formatting source files in source directory...
+for /r "%PROJECT_DIR%\source" %%f in (*.cpp, *.h) do (
     echo.   Processing: %%f
     clang-format -i "%%f"
     if errorlevel 1 (
