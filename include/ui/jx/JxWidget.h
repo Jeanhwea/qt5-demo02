@@ -3,14 +3,13 @@
 
 #include <QWidget>
 
-class JxWidget : public QWidget
-{
-    Q_OBJECT
+class JxWidget : public QWidget {
+  Q_OBJECT
 public:
-    explicit JxWidget(QWidget *parent = nullptr);
+  explicit JxWidget(QWidget *parent = nullptr);
 
 private:
-    static const QString QSS;
+  static const QString QSS;
 };
 
 #endif /* End of _JXWIDGET_H_ */

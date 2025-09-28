@@ -1,6 +1,6 @@
 #include "ui/jx/JxPushButton.h"
-#include <QDebug>
 #include "ui/jx/JxWidget.h"
+#include <QDebug>
 
 const QString JxPushButton::QSS = R"(
 JxPushButton {
@@ -8,12 +8,6 @@ JxPushButton {
 }
 )";
 
-JxPushButton::JxPushButton(JxWidget *parent) : QPushButton(parent)
-{
-    initUI();
-}
+JxPushButton::JxPushButton(JxWidget *parent) : QPushButton(parent) { initUI(); }
 
-void JxPushButton::initUI()
-{
-    this->setStyleSheet(QSS);
-}
+void JxPushButton::initUI() { this->setStyleSheet(QSS); }

@@ -7,7 +7,6 @@ JxWidget {
 }
 )";
 
-JxWidget::JxWidget(QWidget *parent) : QWidget(parent)
-{
-    this->setStyleSheet(QSS);
+JxWidget::JxWidget(QWidget *parent) : QWidget(parent) {
+  this->setStyleSheet(QSS);
 }
