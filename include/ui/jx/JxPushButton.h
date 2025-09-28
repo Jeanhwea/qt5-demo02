@@ -1,8 +1,9 @@
 #ifndef JXPUSHBUTTON_H
 #define JXPUSHBUTTON_H
 
-#include "ui/jx/JxWidget.h"
 #include <QPushButton>
+
+#include "ui/jx/JxWidget.h"
 
 class JxPushButton : public QPushButton {
   Q_OBJECT

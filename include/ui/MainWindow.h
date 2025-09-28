@@ -1,10 +1,11 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include "ui/jx/JxVBoxLayout.h"
-#include "ui/jx/JxWidget.h"
 #include <QMainWindow>
 #include <QString>
+
+#include "ui/jx/JxVBoxLayout.h"
+#include "ui/jx/JxWidget.h"
 
 class MainWindow : public QMainWindow {
   Q_OBJECT
