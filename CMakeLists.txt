@@ -22,10 +22,10 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 # 头文件
 set(HEADERS
-  "include/ui.h"
+  "include/components.h"
   "include/ui/MainWindow.h"
   "include/ui/jx/JxPushButton.h"
-  "include/util.h"
+  "include/utilities.h"
 )
 
 # 源文件
@@ -33,7 +33,7 @@ set(SOURCES
   "src/main.cpp"
   "src/ui/MainWindow.cpp"
   "src/ui/jx/JxPushButton.cpp"
-  "src/util.cpp"
+  "src/utilities.cpp"
 )
 
 # 添加可执行文件

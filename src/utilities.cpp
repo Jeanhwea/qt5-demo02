@@ -1,6 +1,6 @@
-#include "util.h"
 #include <QDebug>
 #include <chrono>
+#include "util.h"
 
 long long Util::getCurrentTimestamp()
 {
