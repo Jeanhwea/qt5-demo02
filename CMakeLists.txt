@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(demo01 LANGUAGES CXX)
+project(demo02 LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -27,17 +27,17 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 if(ANDROID)
-  add_library(demo01 SHARED
+  add_library(demo02 SHARED
     main.cpp
     mainwindow.cpp
     mainwindow.h
   )
 else()
-  add_executable(demo01
+  add_executable(demo02
     main.cpp
     mainwindow.cpp
     mainwindow.h
   )
 endif()
 
-target_link_libraries(demo01 PRIVATE Qt5::Widgets)
+target_link_libraries(demo02 PRIVATE Qt5::Widgets)
