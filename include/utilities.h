@@ -12,5 +12,4 @@ public:
     static void info(const QString &msg);
 };
 
-
 #endif /* End of _UTILITIES_H_ */
