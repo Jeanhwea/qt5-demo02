@@ -74,7 +74,7 @@ void Logger::log(LogLevel level, const QString &message, const char *file, int l
 
     // 输出到文件
     if (m_logFile.isOpen()) {
-        m_fileStream << formattedMessage << endl;
+        m_fileStream << formattedMessage << Qt::endl;
         m_fileStream.flush(); // 确保立即写入文件
     }
 

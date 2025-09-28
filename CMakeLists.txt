@@ -13,9 +13,18 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-# C++ 标准设置
+# 设置 C++ 标准
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# 确保所有源文件使用 UTF-8 编码编译
+if(MSVC)
+    # 对 Visual Studio 编译器设置 UTF-8 编码
+    add_compile_options(/utf-8)
+else()
+    # 对其他编译器设置 UTF-8 编码
+    add_compile_options(-finput-charset=UTF-8 -fexec-charset=UTF-8)
+endif()
 
 # 查找 Qt 依赖
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
