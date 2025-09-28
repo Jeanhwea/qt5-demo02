@@ -25,7 +25,7 @@ set(HEADERS
   "include/components.h"
   "include/ui/MainWindow.h"
   "include/ui/jx/JxPushButton.h"
-  "include/utilities.h"
+  "include/util.h"
 )
 
 # 源文件
@@ -33,7 +33,7 @@ set(SOURCES
   "src/main.cpp"
   "src/ui/MainWindow.cpp"
   "src/ui/jx/JxPushButton.cpp"
-  "src/utilities.cpp"
+  "src/util.cpp"
 )
 
 # 添加可执行文件

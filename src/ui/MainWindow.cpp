@@ -2,7 +2,7 @@
 #include <QDebug>
 #include <QLabel>
 #include "components.h"
-#include "utilities.h"
+#include "util.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
