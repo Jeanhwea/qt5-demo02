@@ -28,15 +28,15 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 if(ANDROID)
   add_library(demo02 SHARED
-    main.cpp
-    mainwindow.cpp
-    mainwindow.h
+    "src/main.cpp"
+    "src/mainwindow.cpp"
+    "src/mainwindow.h"
   )
 else()
   add_executable(demo02
-    main.cpp
-    mainwindow.cpp
-    mainwindow.h
+    "src/main.cpp"
+    "src/mainwindow.cpp"
+    "src/mainwindow.h"
   )
 endif()
 
