@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 project(demo02
-  VERSION 0.0.2
+  VERSION 0.0.3
   DESCRIPTION "Qt GUI Application"
   LANGUAGES CXX)
 
