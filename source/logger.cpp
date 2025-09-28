@@ -5,7 +5,8 @@
 // 初始化静态成员
 Logger *Logger::m_instance = nullptr;
 
-Logger::Logger(QObject *parent) : QObject(parent), m_consoleOutput(true), m_logLevel(Debug)
+Logger::Logger(QObject *parent) :
+    QObject(parent), m_consoleOutput(true), m_logLevel(Debug)
 {
     // 默认日志路径: 应用程序所在目录/logs/当前日期.log
     QString logDir = QDir::currentPath() + "/logs";
@@ -13,7 +14,8 @@ Logger::Logger(QObject *parent) : QObject(parent), m_consoleOutput(true), m_logL
         QDir().mkpath(logDir);
     }
 
-    QString fileName = logDir + "/" + QDateTime::currentDateTime().toString("yyyyMMdd.hh") + ".log";
+    QString fileName =
+        logDir + "/" + QDateTime::currentDateTime().toString("yyyyMMdd.hh") + ".log";
     setLogFilePath(fileName);
 }
 
@@ -91,17 +93,20 @@ void Logger::log(LogLevel level, const QString &message, const char *file, int l
     }
 }
 
-QString Logger::formatLogMessage(LogLevel level, const QString &message, const char *file, int line)
+QString Logger::formatLogMessage(LogLevel level, const QString &message,
+                                 const char *file, int line)
 {
     // 格式化时间
     QString timeStr = QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss.zzz");
 
     // 构建日志内容
-    QString logMessage = QString("[%1] [%2] ").arg(timeStr).arg(logLevelToString(level));
+    QString logMessage =
+        QString("[%1] [%2] ").arg(timeStr).arg(logLevelToString(level));
 
     // 添加文件名和行号(如果提供)
     if (file && line > 0) {
-        QString fileName = QFileInfo(QString(file)).fileName(); // 只保留文件名，去掉路径
+        QString fileName =
+            QFileInfo(QString(file)).fileName(); // 只保留文件名，去掉路径
         logMessage += QString("[%1:%2] ").arg(fileName).arg(line);
     }
 

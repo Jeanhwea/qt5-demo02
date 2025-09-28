@@ -35,7 +35,8 @@ public:
     void setLogLevel(LogLevel level);
 
     // 日志输出函数
-    void log(LogLevel level, const QString &message, const char *file = nullptr, int line = 0);
+    void log(LogLevel level, const QString &message, const char *file = nullptr,
+             int line = 0);
 
 // 便捷的日志宏会自动传入文件名和行号
 #define LOG_DEBUG(msg) Logger::getInstance()->log(Debug, msg, __FILE__, __LINE__)
@@ -54,7 +55,8 @@ private:
     Logger &operator=(const Logger &) = delete;
 
     // 格式化日志消息
-    QString formatLogMessage(LogLevel level, const QString &message, const char *file, int line);
+    QString formatLogMessage(LogLevel level, const QString &message, const char *file,
+                             int line);
 
     // 级别转字符串
     QString logLevelToString(LogLevel level);
