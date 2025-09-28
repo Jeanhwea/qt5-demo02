@@ -3,5 +3,6 @@
 
 #include "ui/MainWindow.h"
 #include "ui/jx/JxPushButton.h"
+#include "ui/jx/JxVBoxLayout.h"
 
 #endif /* End of _COMPONENTS_H_ */

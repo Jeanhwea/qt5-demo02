@@ -7,7 +7,7 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
     // 初始化主窗口
-    this->setWindowTitle("Demo02 - " + QString::number(Util::getCurrentTimestamp()));
+    this->setWindowTitle("DEMO");
     this->setGeometry(100, 100, 800, 600);
 
     // 初始化UI组件
@@ -16,15 +16,23 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
 MainWindow::~MainWindow()
 {
+    delete this->layout;
 }
 
 void MainWindow::initUI()
 {
+    this->widget = new QWidget(this);
+    JxVBoxLayout *layout = new JxVBoxLayout();
+
     JxPushButton *btn = new JxPushButton(this);
     btn->setText("Click Me");
     btn->connect(btn, &JxPushButton::clicked, this, &MainWindow::onBtnClick);
+    layout->addWidget(btn);
 
-    this->setCentralWidget(btn);
+    layout->addStretch();
+
+    this->layout = layout;
+    this->setCentralWidget(this->widget);
 }
 
 void MainWindow::onBtnClick()

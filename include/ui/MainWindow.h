@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QString>
+#include "ui/jx/JxVBoxLayout.h"
 
 class MainWindow : public QMainWindow
 {
@@ -15,6 +16,9 @@ public:
 private:
     void initUI();
     void onBtnClick();
+
+    QWidget *widget;
+    JxVBoxLayout *layout;
 };
 
 #endif /* End of _MAINWINDOW_H_ */
