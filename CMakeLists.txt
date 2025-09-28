@@ -36,9 +36,7 @@ add_executable(demo02
     ${HEADERS})
 
 if(WIN32)
-    if(NOT CMAKE_BUILD_TYPE STREQUAL "Debug")
-        set_target_properties(demo02 PROPERTIES WIN32_EXECUTABLE ON)
-    endif()
+  set_target_properties(demo02 PROPERTIES WIN32_EXECUTABLE ON)
 endif()
 
 # 链接库
