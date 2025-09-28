@@ -1,6 +1,6 @@
-#ifndef UI_H
-#define UI_H
+#ifndef _UI_H_
+#define _UI_H_
 
 #include "ui/MainWindow.h"
 
-#endif // UI_H
+#endif /* End of _UI_H_ */

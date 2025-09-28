@@ -10,5 +10,9 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+private:
+    void initUI();
 };
-#endif // MAINWINDOW_H
+
+#endif /* End of _MAINWINDOW_H_ */

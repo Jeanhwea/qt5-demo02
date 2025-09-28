@@ -22,13 +22,17 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 # 头文件
 set(HEADERS
-    "include/ui/MainWindow.h"
-    "include/ui.h")
+  "include/ui.h"
+  "include/ui/MainWindow.h"
+  "include/util.h"
+)
 
 # 源文件
 set(SOURCES
-    "src/main.cpp"
-    "src/ui/MainWindow.cpp")
+  "src/main.cpp"
+  "src/ui/MainWindow.cpp"
+  "src/util.cpp"
+)
 
 # 添加可执行文件
 add_executable(demo02
