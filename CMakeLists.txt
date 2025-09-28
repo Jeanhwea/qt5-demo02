@@ -23,6 +23,7 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 # 头文件
 set(HEADERS
   "include/components.h"
+  "include/logger.h"
   "include/ui/MainWindow.h"
   "include/ui/jx/JxHBoxLayout.h"
   "include/ui/jx/JxPushButton.h"
@@ -33,6 +34,7 @@ set(HEADERS
 
 # 源文件
 set(SOURCES
+  "source/logger.cpp"
   "source/main.cpp"
   "source/ui/MainWindow.cpp"
   "source/ui/jx/JxHBoxLayout.cpp"

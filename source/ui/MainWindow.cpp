@@ -2,6 +2,7 @@
 #include <QDebug>
 #include <QLabel>
 #include "components.h"
+#include "logger.h"
 #include "util.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
@@ -47,5 +48,5 @@ void MainWindow::initUI()
 
 void MainWindow::onBtnClick()
 {
-    qDebug() << "Button Clicked!" << Util::getCurrentTimestamp();
+    LOG_DEBUG(QString("Button clicked at %1").arg(Util::getCurrentTimestamp()));
 }
