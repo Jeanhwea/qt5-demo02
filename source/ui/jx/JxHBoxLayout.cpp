@@ -4,6 +4,7 @@
 
 JxHBoxLayout::JxHBoxLayout(JxWidget *parent)
 {
+    this->initUI();
 }
 
 void JxHBoxLayout::initUI()

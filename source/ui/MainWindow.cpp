@@ -7,10 +7,10 @@
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
-    // 初始化主窗口
-    this->setWindowTitle("DEMO");
-    this->setGeometry(100, 100, 800, 600);
-    this->setContentsMargins(0, 0, 0, 0);
+    
+    this->widget = new JxWidget(this);
+    this->layout = new JxVBoxLayout(this->widget);
+
 
     // 初始化UI组件
     this->initUI();
@@ -24,9 +24,14 @@ MainWindow::~MainWindow()
 
 void MainWindow::initUI()
 {
-    widget = new JxWidget(this);
-    JxVBoxLayout *layout = new JxVBoxLayout();
-    // layout->setContentsMargins(100, 100, 100, 100);
+    // 初始化主窗口
+    this->setWindowTitle("DEMO");
+    this->setGeometry(100, 100, 800, 600);
+    this->setContentsMargins(0, 0, 0, 0);
+
+    layout = this->layout;
+
+    layout->setContentsMargins(5, 5, 5, 5);
 
     JxPushButton *btn01 = new JxPushButton(widget);
     btn01->setText("Click Me");
@@ -40,7 +45,6 @@ void MainWindow::initUI()
 
     layout->addStretch();
 
-    this->widget = widget;
     widget->setLayout(layout);
     this->layout = layout;
     this->setCentralWidget(this->widget);

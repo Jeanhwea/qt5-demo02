@@ -11,6 +11,8 @@ public:
     explicit JxPushButton(JxWidget *parent = nullptr);
 
 private:
+    void initUI();
+
     static const QString QSS;
 };
 
