@@ -43,6 +43,12 @@ if not exist "%TARGET_DIR%\%TARGET_EXE%" (
     exit /b 1
 )
 
+REM if debug configuration, skip windeployqt
+if /i "%CONFIG%"=="Debug" (
+    echo Debug configuration detected. Skipping windeployqt.
+    goto end
+)
+
 REM Run windeployqt
 cd /d "%TARGET_DIR%"
 echo Running windeployqt to deploy Qt dependencies...
@@ -55,4 +61,5 @@ REM Return to original directory
 cd /d "%ORIGINAL_DIR%"
 echo Project build and deployment completed successfully!
 
+:end
 endlocal
