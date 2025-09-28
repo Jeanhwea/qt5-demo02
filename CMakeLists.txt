@@ -23,20 +23,20 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 # 头文件
 set(HEADERS
-    "include/MainWindow.h"
-)
+    "include/ui/MainWindow.h"
+ "include/ui.h")
 
 # 源文件
 set(SOURCES
     "src/main.cpp"
-    "src/MainWindow.cpp"
-)
+    "src/ui/MainWindow.cpp"
+ "include/ui.h")
 
 # 添加可执行文件
 add_executable(demo02 
     ${SOURCES}
     ${HEADERS}
-)
+ "include/ui.h")
 
 # 链接库
 target_link_libraries(demo02 PRIVATE Qt5::Widgets)
