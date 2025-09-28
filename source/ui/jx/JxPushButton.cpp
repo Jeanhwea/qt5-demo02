@@ -10,9 +10,10 @@ JxPushButton {
 
 JxPushButton::JxPushButton(JxWidget *parent) : QPushButton(parent)
 {
-    this->setStyleSheet(QSS);
+    initUI();
 }
 
 void JxPushButton::initUI()
 {
+    this->setStyleSheet(QSS);
 }

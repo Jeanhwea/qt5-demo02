@@ -4,7 +4,7 @@
 
 JxVBoxLayout::JxVBoxLayout(JxWidget *parent)
 {
-    this->initUI();
+    initUI();
 }
 
 void JxVBoxLayout::initUI()

@@ -7,19 +7,17 @@
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
-    
-    this->widget = new JxWidget(this);
-    this->layout = new JxVBoxLayout(this->widget);
+    m_widget = new JxWidget(this);
 
+    m_layout = new JxVBoxLayout(this->m_widget);
 
-    // 初始化UI组件
-    this->initUI();
+    initUI();
 }
 
 MainWindow::~MainWindow()
 {
-    delete this->layout;
-    delete this->widget;
+    delete m_layout;
+    delete m_widget;
 }
 
 void MainWindow::initUI()
@@ -29,25 +27,22 @@ void MainWindow::initUI()
     this->setGeometry(100, 100, 800, 600);
     this->setContentsMargins(0, 0, 0, 0);
 
-    layout = this->layout;
+    m_layout->setContentsMargins(5, 5, 5, 5);
 
-    layout->setContentsMargins(5, 5, 5, 5);
-
-    JxPushButton *btn01 = new JxPushButton(widget);
+    JxPushButton *btn01 = new JxPushButton(m_widget);
     btn01->setText("Click Me");
     btn01->connect(btn01, &JxPushButton::clicked, this, &MainWindow::onBtnClick);
-    layout->addWidget(btn01);
+    m_layout->addWidget(btn01);
 
-    JxPushButton *btn02 = new JxPushButton(widget);
+    JxPushButton *btn02 = new JxPushButton(m_widget);
     btn02->setText("Click Me 2");
     btn02->connect(btn02, &JxPushButton::clicked, this, &MainWindow::onBtnClick2);
-    layout->addWidget(btn02);
+    m_layout->addWidget(btn02);
 
-    layout->addStretch();
+    m_layout->addStretch();
 
-    widget->setLayout(layout);
-    this->layout = layout;
-    this->setCentralWidget(this->widget);
+    m_widget->setLayout(m_layout);
+    this->setCentralWidget(m_widget);
 }
 
 void MainWindow::onBtnClick()

@@ -19,8 +19,8 @@ private:
     void onBtnClick();
     void onBtnClick2();
 
-    JxWidget *widget;
-    JxVBoxLayout *layout;
+    JxWidget *m_widget;
+    JxVBoxLayout *m_layout;
 };
 
 #endif /* End of _MAINWINDOW_H_ */
