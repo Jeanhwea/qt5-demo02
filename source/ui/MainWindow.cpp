@@ -35,7 +35,7 @@ void MainWindow::initUI()
 
     JxPushButton *btn02 = new JxPushButton(widget);
     btn02->setText("Click Me 2");
-    // btn02->connect(btn02, &JxPushButton::clicked, this, &MainWindow::onBtnClick);
+    btn02->connect(btn02, &JxPushButton::clicked, this, &MainWindow::onBtnClick2);
     layout->addWidget(btn02);
 
     layout->addStretch();
@@ -49,4 +49,9 @@ void MainWindow::initUI()
 void MainWindow::onBtnClick()
 {
     LOG_DEBUG(QString("Button clicked at %1").arg(Util::getCurrentTimestamp()));
+}
+
+void MainWindow::onBtnClick2()
+{
+    LOG_INFO(QString("Button clicked at %1").arg(Util::getCurrentTimestamp()));
 }

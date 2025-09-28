@@ -49,9 +49,9 @@ add_executable(demo02
     ${SOURCES}
     ${HEADERS})
 
-if(WIN32)
-  set_target_properties(demo02 PROPERTIES WIN32_EXECUTABLE ON)
-endif()
+# if(WIN32)
+#   set_target_properties(demo02 PROPERTIES WIN32_EXECUTABLE ON)
+# endif()
 
 # 链接库
 target_link_libraries(demo02 PRIVATE Qt5::Widgets)

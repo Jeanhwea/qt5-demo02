@@ -17,6 +17,7 @@ public:
 private:
     void initUI();
     void onBtnClick();
+    void onBtnClick2();
 
     JxWidget *widget;
     JxVBoxLayout *layout;

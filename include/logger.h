@@ -40,7 +40,7 @@ public:
 // 便捷的日志宏会自动传入文件名和行号
 #define LOG_DEBUG(msg) Logger::getInstance()->log(Debug, msg, __FILE__, __LINE__)
 #define LOG_INFO(msg) Logger::getInstance()->log(Info, msg, __FILE__, __LINE__)
-#define LOG_WARNING(msg) Logger::getInstance()->log(Warning, msg, __FILE__, __LINE__)
+#define LOG_WARN(msg) Logger::getInstance()->log(Warning, msg, __FILE__, __LINE__)
 #define LOG_ERROR(msg) Logger::getInstance()->log(Error, msg, __FILE__, __LINE__)
 #define LOG_FATAL(msg) Logger::getInstance()->log(Fatal, msg, __FILE__, __LINE__)
 
