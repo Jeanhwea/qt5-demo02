@@ -1,6 +1,6 @@
-# 基于 Qt 项目风格的 clang-format 配置
+# Qt project style based clang-format configuration
 
-# 基本设置
+# Basic settings
 Language: Cpp
 AccessModifierOffset: -4
 AlignAfterOpenBracket: Align
@@ -22,14 +22,14 @@ AlwaysBreakTemplateDeclarations: Yes
 BinPackArguments: true
 BinPackParameters: true
 BraceWrapping:
-  AfterClass: false
+  AfterClass: true  
   AfterControlStatement: false
-  AfterEnum: false
-  AfterFunction: false
+  AfterEnum: true  
+  AfterFunction: true  
   AfterNamespace: false
   AfterObjCDeclaration: false
-  AfterStruct: false
-  AfterUnion: false
+  AfterStruct: true  
+  AfterUnion: true 
   AfterExternBlock: false
   BeforeCatch: false
   BeforeElse: false
@@ -38,7 +38,7 @@ BraceWrapping:
   SplitEmptyRecord: true
   SplitEmptyNamespace: true
 BreakBeforeBinaryOperators: None
-BreakBeforeBraces: Attach
+BreakBeforeBraces: Custom  # Changed from Attach to Custom
 BreakBeforeInheritanceComma: false
 BreakBeforeTernaryOperators: true
 BreakConstructorInitializersBeforeComma: false
