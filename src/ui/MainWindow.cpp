@@ -1,8 +1,8 @@
 #include "ui/MainWindow.h"
 #include <QDebug>
 #include <QLabel>
-#include "ui.h"
-#include "util.h"
+#include "components.h"
+#include "utilities.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {

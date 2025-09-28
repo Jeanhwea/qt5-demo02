@@ -1,5 +1,5 @@
-#ifndef _UTIL_H_
-#define _UTIL_H_
+#ifndef _UTILITIES_H_
+#define _UTILITIES_H_
 
 #include <QString>
 
@@ -12,4 +12,5 @@ public:
     static void info(const QString &msg);
 };
 
-#endif /* End of _UTIL_H_ */
+
+#endif /* End of _UTILITIES_H_ */

@@ -1,7 +1,7 @@
-#ifndef _UI_H_
-#define _UI_H_
+#ifndef _COMPONENTS_H_
+#define _COMPONENTS_H_
 
 #include "ui/MainWindow.h"
 #include "ui/jx/JxPushButton.h"
 
-#endif /* End of _UI_H_ */
+#endif /* End of _COMPONENTS_H_ */
