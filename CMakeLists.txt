@@ -26,6 +26,9 @@ else()
     add_compile_options(-finput-charset=UTF-8 -fexec-charset=UTF-8)
 endif()
 
+# 生成 compile_commands.json 供 clangd 使用
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # 查找 Qt 依赖
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
