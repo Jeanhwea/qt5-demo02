@@ -12,7 +12,7 @@ enum LogLevel { Debug, Info, Warning, Error, Fatal };
 
 class Logger : public QObject {
   Q_OBJECT
- public:
+public:
   static Logger *getInstance();
   void setLogFilePath(const QString &path);
   void setConsoleOutput(bool enable);
@@ -20,17 +20,17 @@ class Logger : public QObject {
   void log(LogLevel level, const QString &message, const char *file = nullptr,
            int line = 0);
 
-#define LOG_DEBUG(msg) \
+#define LOG_DEBUG(msg)                                                         \
   Logger::getInstance()->log(Debug, msg, __FILE__, __LINE__)
 #define LOG_INFO(msg) Logger::getInstance()->log(Info, msg, __FILE__, __LINE__)
-#define LOG_WARN(msg) \
+#define LOG_WARN(msg)                                                          \
   Logger::getInstance()->log(Warning, msg, __FILE__, __LINE__)
-#define LOG_ERROR(msg) \
+#define LOG_ERROR(msg)                                                         \
   Logger::getInstance()->log(Error, msg, __FILE__, __LINE__)
-#define LOG_FATAL(msg) \
+#define LOG_FATAL(msg)                                                         \
   Logger::getInstance()->log(Fatal, msg, __FILE__, __LINE__)
 
- private:
+private:
   explicit Logger(QObject *parent = nullptr);
   ~Logger() override;
 
@@ -41,7 +41,7 @@ class Logger : public QObject {
   QString logLevelToString(LogLevel level);
   QString logLevelToColor(LogLevel level);
 
- private:
+private:
   static Logger *m_instance;
   QFile m_logFile;
   QTextStream m_fileStream;

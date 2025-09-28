@@ -4,7 +4,7 @@
 #include <QString>
 
 class Util {
- public:
+public:
   // 获取当前时间戳（秒级）
   static long long getCurrentTimestamp();
 

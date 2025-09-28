@@ -1,20 +1,20 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
-#include <QString>
-
 #include "ui/jx/JxVBoxLayout.h"
 #include "ui/jx/JxWidget.h"
+
+#include <QMainWindow>
+#include <QString>
 
 class MainWindow : public QMainWindow {
   Q_OBJECT
 
- public:
+public:
   MainWindow(QWidget *parent = nullptr);
   ~MainWindow();
 
- private:
+private:
   void initUI();
   void onBtnClick();
   void onBtnClick2();

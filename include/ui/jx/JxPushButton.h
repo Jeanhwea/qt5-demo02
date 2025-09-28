@@ -1,19 +1,19 @@
 #ifndef JXPUSHBUTTON_H
 #define JXPUSHBUTTON_H
 
-#include <QPushButton>
-
 #include "ui/jx/JxWidget.h"
+
+#include <QPushButton>
 
 class JxPushButton : public QPushButton {
   Q_OBJECT
- public:
+public:
   explicit JxPushButton(JxWidget *parent = nullptr);
 
- private:
+private:
   void initUI();
 
   static const QString QSS;
 };
 
-#endif  // JXPUSHBUTTON_H
+#endif // JXPUSHBUTTON_H

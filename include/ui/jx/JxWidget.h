@@ -5,10 +5,10 @@
 
 class JxWidget : public QWidget {
   Q_OBJECT
- public:
+public:
   explicit JxWidget(QWidget *parent = nullptr);
 
- private:
+private:
   static const QString QSS;
 };
 

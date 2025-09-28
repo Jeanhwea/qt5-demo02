@@ -1,8 +1,8 @@
 #include "ui/jx/JxPushButton.h"
 
-#include <QDebug>
-
 #include "ui/jx/JxWidget.h"
+
+#include <QDebug>
 
 const QString JxPushButton::QSS = R"(
 JxPushButton {

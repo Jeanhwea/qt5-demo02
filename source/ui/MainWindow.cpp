@@ -1,11 +1,11 @@
 #include "ui/MainWindow.h"
 
-#include <QDebug>
-#include <QLabel>
-
 #include "components.h"
 #include "logger.h"
 #include "util.h"
+
+#include <QDebug>
+#include <QLabel>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), m_widget(this), m_layout(&m_widget) {

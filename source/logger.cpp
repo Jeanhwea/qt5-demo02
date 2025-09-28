@@ -102,35 +102,35 @@ QString Logger::formatLogMessage(LogLevel level, const QString &message,
 
 QString Logger::logLevelToString(LogLevel level) {
   switch (level) {
-    case Debug:
-      return "DEBUG";
-    case Info:
-      return "INFO";
-    case Warning:
-      return "WARNING";
-    case Error:
-      return "ERROR";
-    case Fatal:
-      return "FATAL";
-    default:
-      return "UNKNOWN";
+  case Debug:
+    return "DEBUG";
+  case Info:
+    return "INFO";
+  case Warning:
+    return "WARNING";
+  case Error:
+    return "ERROR";
+  case Fatal:
+    return "FATAL";
+  default:
+    return "UNKNOWN";
   }
 }
 
 QString Logger::logLevelToColor(LogLevel level) {
   // ANSI 颜色代码，用于控制台彩色输出
   switch (level) {
-    case Debug:
-      return "\033[37m";  // 白色
-    case Info:
-      return "\033[32m";  // 绿色
-    case Warning:
-      return "\033[33m";  // 黄色
-    case Error:
-      return "\033[31m";  // 红色
-    case Fatal:
-      return "\033[1;31m";  // 亮红色
-    default:
-      return "\033[0m";  // 默认颜色
+  case Debug:
+    return "\033[37m"; // 白色
+  case Info:
+    return "\033[32m"; // 绿色
+  case Warning:
+    return "\033[33m"; // 黄色
+  case Error:
+    return "\033[31m"; // 红色
+  case Fatal:
+    return "\033[1;31m"; // 亮红色
+  default:
+    return "\033[0m"; // 默认颜色
   }
 }
