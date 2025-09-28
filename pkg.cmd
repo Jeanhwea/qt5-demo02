@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set "CONFIG=Debug"
-rem set "CONFIG=Release"
+rem set "CONFIG=Debug"
+set "CONFIG=Release"
 
 cmake --build build --config %CONFIG% --target ALL_BUILD
