@@ -43,9 +43,7 @@
     JxWidget.cpp
     util.cpp
     正在生成代码...
-  MSVCRTD.lib(initializers.obj) : warning LNK4098: 默认库“msvcrt.lib”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
-  [D:\code\GUI\de
-  mo02\build\demo02.vcxproj]
+  MSVCRTD.lib(initializers.obj) : warning LNK4098: 默认库“msvcrt.lib”与其他库的使用冲突；请使用 /NODEFAULTLIB:library [D:\code\GUI\demo02\build\demo02.vcxproj]
     demo02.vcxproj -> D:\code\GUI\demo02\build\Debug\demo02.exe
     Building Custom Rule D:/code/GUI/demo02/CMakeLists.txt
 
