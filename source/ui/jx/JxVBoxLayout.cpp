@@ -1,8 +1,8 @@
 #include "ui/jx/JxVBoxLayout.h"
 
-#include "ui/jx/JxWidget.h"
-
 #include <QDebug>
+
+#include "ui/jx/JxWidget.h"
 
 JxVBoxLayout::JxVBoxLayout(JxWidget *parent) { initUI(); }
 

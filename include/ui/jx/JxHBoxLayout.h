@@ -1,16 +1,16 @@
 #ifndef _JXHBOXLAYOUT_H_
 #define _JXHBOXLAYOUT_H_
 
-#include "ui/jx/JxWidget.h"
-
 #include <QHBoxLayout>
+
+#include "ui/jx/JxWidget.h"
 
 class JxHBoxLayout : public QHBoxLayout {
   Q_OBJECT
-public:
+ public:
   explicit JxHBoxLayout(JxWidget *parent = nullptr);
 
-private:
+ private:
   void initUI();
 };
 

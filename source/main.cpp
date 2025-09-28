@@ -1,7 +1,7 @@
+#include <QApplication>
+
 #include "components.h"
 #include "logger.h"
-
-#include <QApplication>
 
 int main(int argc, char *argv[]) {
   Logger::getInstance()->setLogLevel(Debug);
