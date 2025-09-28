@@ -14,6 +14,7 @@ public:
 
 private:
     void initUI();
+    void onBtnClick();
 };
 
 #endif /* End of _MAINWINDOW_H_ */

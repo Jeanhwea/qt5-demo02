@@ -1,4 +1,5 @@
 #include "ui/MainWindow.h"
+#include <QDebug>
 #include <QLabel>
 #include "ui.h"
 #include "util.h"
@@ -21,6 +22,12 @@ void MainWindow::initUI()
 {
     JxPushButton *btn = new JxPushButton(this);
     btn->setText("Click Me");
-    // btn->setGeometry(100, 200, 100, 50);
+    btn->connect(btn, &JxPushButton::clicked, this, &MainWindow::onBtnClick);
+
     this->setCentralWidget(btn);
+}
+
+void MainWindow::onBtnClick()
+{
+    qDebug() << "Button Clicked!" << Util::getCurrentTimestamp();
 }
