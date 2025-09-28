@@ -17,20 +17,22 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 MainWindow::~MainWindow()
 {
     delete this->layout;
+    delete this->widget;
 }
 
 void MainWindow::initUI()
 {
-    this->widget = new JxWidget(this);
+    widget = new JxWidget(this);
     JxVBoxLayout *layout = new JxVBoxLayout();
 
-    JxPushButton *btn01 = new JxPushButton(this);
+    JxPushButton *btn01 = new JxPushButton(widget);
     btn01->setText("Click Me");
     btn01->connect(btn01, &JxPushButton::clicked, this, &MainWindow::onBtnClick);
     layout->addWidget(btn01);
 
     layout->addStretch();
 
+    this->widget = widget;
     this->layout = layout;
     this->setCentralWidget(this->widget);
 }
