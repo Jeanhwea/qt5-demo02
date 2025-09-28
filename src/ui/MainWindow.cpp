@@ -21,7 +21,6 @@ void MainWindow::initUI()
 {
     JxPushButton *btn = new JxPushButton(this);
     btn->setText("Click Me");
-    btn->setGeometry(100, 200, 100, 50);
-
+    // btn->setGeometry(100, 200, 100, 50);
     this->setCentralWidget(btn);
 }

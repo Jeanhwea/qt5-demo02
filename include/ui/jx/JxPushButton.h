@@ -8,6 +8,9 @@ class JxPushButton : public QPushButton
     Q_OBJECT
 public:
     explicit JxPushButton(QWidget *parent = nullptr);
+
+private:
+    static const QString QSS;
 };
 
 #endif // JXPUSHBUTTON_H
