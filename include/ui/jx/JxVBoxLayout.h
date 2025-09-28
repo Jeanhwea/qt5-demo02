@@ -2,12 +2,13 @@
 #define _JXVBOXLAYOUT_H_
 
 #include <QVBoxLayout>
+#include "ui/jx/JxWidget.h"
 
 class JxVBoxLayout : public QVBoxLayout
 {
     Q_OBJECT
 public:
-    explicit JxVBoxLayout(QWidget *parent = nullptr);
+    explicit JxVBoxLayout(JxWidget *parent = nullptr);
 
 private:
     void initUI();

@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QString>
 #include "ui/jx/JxVBoxLayout.h"
+#include "ui/jx/JxWidget.h"
 
 class MainWindow : public QMainWindow
 {
@@ -17,7 +18,7 @@ private:
     void initUI();
     void onBtnClick();
 
-    QWidget *widget;
+    JxWidget *widget;
     JxVBoxLayout *layout;
 };
 

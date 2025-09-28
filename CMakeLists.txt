@@ -26,6 +26,7 @@ set(HEADERS
   "include/ui/MainWindow.h"
   "include/ui/jx/JxPushButton.h"
   "include/ui/jx/JxVBoxLayout.h"
+  "include/ui/jx/JxWidget.h"
   "include/util.h"
 )
 
@@ -35,6 +36,7 @@ set(SOURCES
   "src/ui/MainWindow.cpp"
   "src/ui/jx/JxPushButton.cpp"
   "src/ui/jx/JxVBoxLayout.cpp"
+  "src/ui/jx/JxWidget.cpp"
   "src/util.cpp"
 )
 

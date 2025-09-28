@@ -2,12 +2,13 @@
 #define JXPUSHBUTTON_H
 
 #include <QPushButton>
+#include "ui/jx/JxWidget.h"
 
 class JxPushButton : public QPushButton
 {
     Q_OBJECT
 public:
-    explicit JxPushButton(QWidget *parent = nullptr);
+    explicit JxPushButton(JxWidget *parent = nullptr);
 
 private:
     static const QString QSS;

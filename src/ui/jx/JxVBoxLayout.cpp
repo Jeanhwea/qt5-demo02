@@ -1,7 +1,8 @@
 #include "ui/jx/JxVBoxLayout.h"
 #include <QDebug>
+#include "ui/jx/JxWidget.h"
 
-JxVBoxLayout::JxVBoxLayout(QWidget *parent)
+JxVBoxLayout::JxVBoxLayout(JxWidget *parent)
 {
 }
 

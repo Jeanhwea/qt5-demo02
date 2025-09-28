@@ -21,13 +21,13 @@ MainWindow::~MainWindow()
 
 void MainWindow::initUI()
 {
-    this->widget = new QWidget(this);
+    this->widget = new JxWidget(this);
     JxVBoxLayout *layout = new JxVBoxLayout();
 
-    JxPushButton *btn = new JxPushButton(this);
-    btn->setText("Click Me");
-    btn->connect(btn, &JxPushButton::clicked, this, &MainWindow::onBtnClick);
-    layout->addWidget(btn);
+    JxPushButton *btn01 = new JxPushButton(this);
+    btn01->setText("Click Me");
+    btn01->connect(btn01, &JxPushButton::clicked, this, &MainWindow::onBtnClick);
+    layout->addWidget(btn01);
 
     layout->addStretch();
 
