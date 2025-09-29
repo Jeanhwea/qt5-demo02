@@ -11,6 +11,10 @@ MainWindow {
   background-color: none;
 }
 
+MainWindow * {
+  font-size: 14px;
+}
+
 MainWindow JxLabel {
   qproperty-alignment: 'AlignCenter';
 }
@@ -34,7 +38,7 @@ void MainWindow::initUI() {
 
   JxLabel *text01 = new JxLabel(&m_widget);
   text01->setText("xxx");
-  //text01->setAlignment(Qt::AlignCenter);
+  // text01->setAlignment(Qt::AlignCenter);
   m_layout.addWidget(text01);
 
   JxPushButton *btn01 = new JxPushButton(&m_widget);
