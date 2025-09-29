@@ -2,10 +2,10 @@
 rem Batch file for formatting all source files in the project
 
 rem Display welcome message
-echo. ===================================
-echo. Formatting Project Source Files
-echo. ===================================
-echo.
+rem echo. ===================================
+rem echo. Formatting Project Source Files
+rem echo. ===================================
+rem echo.
 
 rem Check if clang-format is available
 where clang-format >nul 2>nul
@@ -50,8 +50,8 @@ for /r "%PROJECT_DIR%\source" %%f in (*.cpp, *.h) do (
     )
 )
 
-echo.
-echo. ===================================
-echo. Formatting completed!
-echo. ===================================
-echo.
+rem echo.
+rem echo. ===================================
+rem echo. Formatting completed!
+rem echo. ===================================
+rem echo.
