@@ -1,9 +1,9 @@
-#ifndef _COLORS_H_
-#define _COLORS_H_
+#ifndef _THEMECOLOR_H_
+#define _THEMECOLOR_H_
 
 #include <QString>
 
-namespace Colors {
+namespace ThemeColor {
 const QString BLUE_050 = "#E3F2FD";
 const QString BLUE_100 = "#BBDEFB";
 const QString BLUE_200 = "#90CAF9";
@@ -14,6 +14,6 @@ const QString BLUE_600 = "#1E88E5";
 const QString BLUE_700 = "#1976D2";
 const QString BLUE_800 = "#1565C0";
 const QString BLUE_900 = "#0D47A1";
-}; // namespace Colors
+}; // namespace ThemeColor
 
-#endif /* End of _COLORS_H_ */
+#endif /* End of _THEMECOLOR_H_ */
