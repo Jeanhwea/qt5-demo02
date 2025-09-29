@@ -57,9 +57,9 @@ void MainWindow::initUI() {
 }
 
 void MainWindow::onBtnClick() {
-  LOG_D(QString("Button clicked at %1").arg(Util::getCurrentTimestamp()));
+  LOG_D(QString("Button clicked at %1").arg(util::getCurrentTimestamp()));
 }
 
 void MainWindow::onBtnClick02() {
-  LOG_I(QString("Button clicked at %1").arg(Util::getCurrentTimestamp()));
+  LOG_I(QString("Button clicked at %1").arg(util::getCurrentTimestamp()));
 }

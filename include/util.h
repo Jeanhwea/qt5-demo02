@@ -3,9 +3,8 @@
 
 #include <QString>
 
-class Util {
-public:
-  static long long getCurrentTimestamp();
+namespace util {
+long long getCurrentTimestamp();
 };
 
 #endif /* End of _UTIL_H_ */

@@ -2,6 +2,8 @@
 
 #include <QDateTime>
 
-long long Util::getCurrentTimestamp() {
+namespace util {
+long long getCurrentTimestamp() {
   return QDateTime::currentDateTime().toMSecsSinceEpoch();
 }
+} // namespace util
