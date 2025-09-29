@@ -14,10 +14,8 @@ Logger::Logger(QObject *parent)
     QDir().mkpath(logDir);
   }
 
-  QString fileName =
-      QString("%1/%2.log")
-          .arg(logDir)
-          .arg(QDateTime::currentDateTime().toString("yyyyMMdd.hh"));
+  QString dateStr = QDateTime::currentDateTime().toString("yyyyMMdd.hh");
+  QString fileName = QString("%1/%2.log").arg(logDir).arg(dateStr);
   setLogFilePath(fileName);
 }
 
