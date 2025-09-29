@@ -2,8 +2,6 @@
 
 #include "ui/jx/JxWidget.h"
 
-#include <QDebug>
-
 const QString JxPushButton::QSS = R"(
 JxPushButton {
   background-color: none;

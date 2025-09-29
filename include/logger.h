@@ -2,6 +2,7 @@
 #define _LOGGER_H_
 
 #include <QDateTime>
+#include <QDebug>
 #include <QFile>
 #include <QMutex>
 #include <QObject>

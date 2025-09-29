@@ -2,8 +2,6 @@
 
 #include "ui/jx/JxWidget.h"
 
-#include <QDebug>
-
 JxVBoxLayout::JxVBoxLayout(JxWidget *parent) { initUI(); }
 
 void JxVBoxLayout::initUI() { this->setContentsMargins(0, 0, 0, 0); }
