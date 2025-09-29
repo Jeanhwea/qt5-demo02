@@ -19,6 +19,8 @@ private:
   void onBtnClick();
   void onBtnClick2();
 
+  static const QString QSS;
+
   JxWidget m_widget;
   JxVBoxLayout m_layout;
 };

@@ -5,10 +5,16 @@
 #include "util.h"
 
 #include <QDebug>
-#include <QLabel>
+
+const QString MainWindow::QSS = R"(
+MainWindow {
+  background-color: none;
+}
+)";
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), m_widget(this), m_layout(&m_widget) {
+  this->setStyleSheet(QSS);
   initUI();
 }
 
@@ -21,6 +27,11 @@ void MainWindow::initUI() {
   this->setContentsMargins(0, 0, 0, 0);
 
   m_layout.setContentsMargins(5, 5, 5, 5);
+
+  JxLabel *text01 = new JxLabel(&m_widget);
+  text01->setText("xxx");
+  text01->setAlignment(Qt::AlignCenter);
+  m_layout.addWidget(text01);
 
   JxPushButton *btn01 = new JxPushButton(&m_widget);
   btn01->setText("Click Me");

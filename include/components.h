@@ -3,6 +3,7 @@
 
 #include "ui/MainWindow.h"
 #include "ui/jx/JxHBoxLayout.h"
+#include "ui/jx/JxLabel.h"
 #include "ui/jx/JxPushButton.h"
 #include "ui/jx/JxVBoxLayout.h"
 #include "ui/jx/JxWidget.h"
