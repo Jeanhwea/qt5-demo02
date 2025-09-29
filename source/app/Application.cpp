@@ -7,12 +7,12 @@ Application::Application(int &argc, char **argv)
     : QApplication(argc, argv), m_win() {}
 
 int Application::run() {
-  earlyInit();
+  init();
   m_win.show();
   return exec();
 }
 
-void Application::earlyInit() {
+void Application::init() {
   Logger::getInstance()->setLogLevel(Debug);
   Logger::getInstance()->setConsoleOutput(true);
 }

@@ -10,10 +10,10 @@ public:
   Application(int &argc, char **argv);
 
 public:
-  int run();
+  int startup();
 
 private:
-  void earlyInit();
+  void init();
 
 private:
   MainWindow m_win;
