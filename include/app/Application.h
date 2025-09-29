@@ -13,7 +13,7 @@ public:
   int startup();
 
 private:
-  void init();
+  bool init();
 
 private:
   MainWindow m_win;
