@@ -2,7 +2,7 @@
 
 #include "ui/my/Theme.h"
 
-const QString PrimaryButton::QSS = theme::replaceVariables(R"(
+const QString PrimaryButton::QSS = Theme::instance().replaceSymbols(R"(
 PrimaryButton {
   color: SYM_COLOR_A_800;
   background-color: SYM_COLOR_A_050;
@@ -16,8 +16,6 @@ PrimaryButton::hover {
 }
 )");
 
-PrimaryButton::PrimaryButton(JxWidget *parent) : JxPushButton(parent) {
-  initUI();
-}
+PrimaryButton::PrimaryButton(JxWidget *parent) : JxPushButton(parent) { initUI(); }
 
 void PrimaryButton::initUI() { this->setStyleSheet(QSS); }

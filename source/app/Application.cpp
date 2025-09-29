@@ -4,8 +4,7 @@
 #include "base/consts.h"
 #include "base/logger.h"
 
-Application::Application(int &argc, char **argv)
-    : QApplication(argc, argv), m_win() {}
+Application::Application(int &argc, char **argv) : QApplication(argc, argv), m_win() {}
 
 int Application::startup() {
   if (!init()) {
@@ -17,7 +16,7 @@ int Application::startup() {
 }
 
 bool Application::init() {
-  Logger::getInstance()->setLogLevel(Debug);
-  Logger::getInstance()->setConsoleOutput(true);
+  Logger::instance()->setLogLevel(Debug);
+  Logger::instance()->setConsoleOutput(true);
   return true;
 }

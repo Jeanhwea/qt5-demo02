@@ -7,8 +7,7 @@
 
 Logger *Logger::m_instance = nullptr;
 
-Logger::Logger(QObject *parent)
-    : QObject(parent), m_consoleOutput(true), m_logLevel(Debug) {
+Logger::Logger(QObject *parent) : QObject(parent), m_consoleOutput(true), m_logLevel(Debug) {
   QString logDir = QDir::currentPath() + "/logs";
   if (!QDir(logDir).exists()) {
     QDir().mkpath(logDir);
@@ -25,7 +24,7 @@ Logger::~Logger() {
   }
 }
 
-Logger *Logger::getInstance() {
+Logger *Logger::instance() {
   if (!m_instance) {
     m_instance = new Logger();
   }
@@ -40,8 +39,7 @@ void Logger::setLogFilePath(const QString &path) {
   }
 
   m_logFile.setFileName(path);
-  if (!m_logFile.open(QIODevice::WriteOnly | QIODevice::Append |
-                      QIODevice::Text)) {
+  if (!m_logFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text)) {
     qWarning() << "Failed to open file: " << m_logFile.errorString();
   } else {
     m_fileStream.setDevice(&m_logFile);
@@ -60,15 +58,14 @@ void Logger::setLogLevel(LogLevel level) {
   m_logLevel = level;
 }
 
-void Logger::log(LogLevel level, const QString &message, const char *file,
-                 int line) {
+void Logger::log(LogLevel level, const QString &message, const char *file, int line) {
   QMutexLocker locker(&m_mutex);
 
   if (level < m_logLevel) {
     return;
   }
 
-  QString formattedMessage = formatLogMessage(level, message, file, line);
+  QString formattedMessage = fmt(level, message, file, line);
 
   if (m_logFile.isOpen()) {
     m_fileStream << formattedMessage << Qt::endl;
@@ -76,8 +73,7 @@ void Logger::log(LogLevel level, const QString &message, const char *file,
   }
 
   if (m_consoleOutput) {
-    QString consoleMessage =
-        logLevelToColor(level) + formattedMessage + "\033[0m";
+    QString consoleMessage = logLevelToColor(level) + formattedMessage + "\033[0m";
     qDebug().noquote() << consoleMessage;
   }
 
@@ -86,13 +82,10 @@ void Logger::log(LogLevel level, const QString &message, const char *file,
   }
 }
 
-QString Logger::formatLogMessage(LogLevel level, const QString &message,
-                                 const char *file, int line) {
-  QString timeStr =
-      QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss.zzz");
+QString Logger::fmt(LogLevel level, const QString &message, const char *file, int line) {
+  QString timeStr = QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss.zzz");
 
-  QString logMessage =
-      QString("[%1] [%2] ").arg(timeStr).arg(logLevelToString(level));
+  QString logMessage = QString("[%1] [%2] ").arg(timeStr).arg(logLevelToString(level));
 
   if (file && line > 0) {
     QString fileName = QFileInfo(QString(file)).fileName();

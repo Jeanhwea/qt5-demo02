@@ -7,7 +7,7 @@
 #include "ui/my/PrimaryButton.h"
 #include "ui/my/Theme.h"
 
-const QString MainWindow::QSS = theme::replaceVariables(R"(
+const QString MainWindow::QSS = Theme::instance().replaceSymbols(R"(
 MainWindow {
   background-color: SYM_COLOR_WHITE;
 }
@@ -52,8 +52,7 @@ void MainWindow::initUI() {
 
   PrimaryButton *btn02 = new PrimaryButton(&m_widget);
   btn02->setText("Click Me 2");
-  btn02->connect(btn02, &PrimaryButton::clicked, this,
-                 &MainWindow::onBtnClick02);
+  btn02->connect(btn02, &PrimaryButton::clicked, this, &MainWindow::onBtnClick02);
   ctn01->addWidget(btn02);
   ctn01->addStretch();
 
