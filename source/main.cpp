@@ -1,4 +1,3 @@
-
 #include "logger.h"
 #include "ui/MainWindow.h"
 
