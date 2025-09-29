@@ -2,7 +2,7 @@
 
 #include "ui/zc/Theme.h"
 
-const QString PrimaryButton::QSS = theme::replaceColors(R"(
+const QString PrimaryButton::QSS = theme::replaceVariables(R"(
 PrimaryButton {
   color: PRIMARY_COLOR_800;
   background-color: PRIMARY_COLOR_100;

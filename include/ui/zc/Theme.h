@@ -16,7 +16,7 @@ constexpr const char *PRIMARY_COLOR_700 = "#1976D2";
 constexpr const char *PRIMARY_COLOR_800 = "#1565C0";
 constexpr const char *PRIMARY_COLOR_900 = "#0D47A1";
 
-const static QHash<QString, QString> colorMap = {
+const static QHash<QString, QString> variableMap = {
     {"PRIMARY_COLOR_050", PRIMARY_COLOR_050},
     {"PRIMARY_COLOR_100", PRIMARY_COLOR_100},
     {"PRIMARY_COLOR_200", PRIMARY_COLOR_200},
@@ -28,9 +28,9 @@ const static QHash<QString, QString> colorMap = {
     {"PRIMARY_COLOR_800", PRIMARY_COLOR_800},
     {"PRIMARY_COLOR_900", PRIMARY_COLOR_900}};
 
-inline QString replaceColors(const QString &qss) {
+inline QString replaceVariables(const QString &qss) {
   QString result = qss;
-  for (auto it = colorMap.constBegin(); it != colorMap.constEnd(); ++it) {
+  for (auto it = variableMap.constBegin(); it != variableMap.constEnd(); ++it) {
     result.replace(it.key(), it.value());
   }
   return result;

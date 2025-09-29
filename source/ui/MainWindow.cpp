@@ -6,7 +6,7 @@
 #include "ui/zc/Theme.h"
 #include "util.h"
 
-const QString MainWindow::QSS = theme::replaceColors(R"(
+const QString MainWindow::QSS = theme::replaceVariables(R"(
 MainWindow {
   background-color: none;
 }
