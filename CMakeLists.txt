@@ -64,9 +64,7 @@ set(SOURCES
 )
 
 # 添加可执行文件
-add_executable(demo02
-    ${SOURCES}
-    ${HEADERS} "source/app/Application.cpp")
+add_executable(demo02 ${SOURCES} ${HEADERS})
 
 if(WIN32)
   set_target_properties(demo02 PROPERTIES
