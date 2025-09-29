@@ -6,7 +6,7 @@
 Application::Application(int &argc, char **argv)
     : QApplication(argc, argv), m_win() {}
 
-int Application::run() {
+int Application::startup() {
   init();
   m_win.show();
   return exec();
