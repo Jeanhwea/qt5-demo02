@@ -16,7 +16,7 @@ constexpr const char *PRIMARY_COLOR_700 = "#1976D2";
 constexpr const char *PRIMARY_COLOR_800 = "#1565C0";
 constexpr const char *PRIMARY_COLOR_900 = "#0D47A1";
 
-const QHash<QString, QString> colorMap = {
+const static QHash<QString, QString> colorMap = {
     {"PRIMARY_COLOR_050", PRIMARY_COLOR_050},
     {"PRIMARY_COLOR_100", PRIMARY_COLOR_100},
     {"PRIMARY_COLOR_200", PRIMARY_COLOR_200},
