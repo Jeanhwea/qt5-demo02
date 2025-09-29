@@ -1,7 +1,5 @@
 #include "ui/zc/ThemeColor.h"
 
-const int a = 1;
-
 namespace ThemeColor {
 
 QString replaceColors(const QString &qss) {
