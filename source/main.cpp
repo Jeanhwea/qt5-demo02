@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
   Logger::getInstance()->setConsoleOutput(true);
 
   QApplication app(argc, argv);
-  MainWindow w;
-  w.show();
+  MainWindow win;
+  win.show();
   return app.exec();
 }
