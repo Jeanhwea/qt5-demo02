@@ -1,19 +1,12 @@
 @echo off
 rem Batch file for formatting all source files in the project
 
-rem Display welcome message
-rem echo. ===================================
-rem echo. Formatting Project Source Files
-rem echo. ===================================
-rem echo.
-
 rem Check if clang-format is available
 where clang-format >nul 2>nul
 if %errorlevel% neq 0 (
     echo. Error: clang-format command not found!
     echo. Please ensure clang-format is installed and added to system PATH environment variable.
     echo.
-    pause
     exit /b 1
 )
 
@@ -49,9 +42,3 @@ for /r "%PROJECT_DIR%\source" %%f in (*.cpp, *.h) do (
         echo.   Error: Failed to format %%f!
     )
 )
-
-rem echo.
-rem echo. ===================================
-rem echo. Formatting completed!
-rem echo. ===================================
-rem echo.
