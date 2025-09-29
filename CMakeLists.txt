@@ -42,7 +42,7 @@ set(HEADERS
   "include/ui/jx/JxPushButton.h"
   "include/ui/jx/JxVBoxLayout.h"
   "include/ui/jx/JxWidget.h"
-  "include/ui/zc/ThemeColor.h"
+  "include/ui/zc/Theme.h"
   "include/ui/zc/PrimaryButton.h"
   "include/util.h"
 )
@@ -58,7 +58,7 @@ set(SOURCES
   "source/ui/jx/JxVBoxLayout.cpp"
   "source/ui/jx/JxWidget.cpp"
   "source/ui/zc/PrimaryButton.cpp"
-  "source/ui/zc/ThemeColor.cpp"
+  
   "source/util.cpp"
 )
 

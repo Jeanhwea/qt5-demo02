@@ -3,9 +3,10 @@
 #include "logger.h"
 #include "ui/jx/JxLabel.h"
 #include "ui/zc/PrimaryButton.h"
+#include "ui/zc/Theme.h"
 #include "util.h"
 
-const QString MainWindow::QSS = R"(
+const QString MainWindow::QSS = theme::replaceColors(R"(
 MainWindow {
   background-color: none;
 }
@@ -17,7 +18,7 @@ MainWindow * {
 MainWindow JxLabel {
   qproperty-alignment: 'AlignCenter';
 }
-)";
+)");
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), m_widget(this), m_layout(&m_widget) {

@@ -1,8 +1,8 @@
 #include "ui/zc/PrimaryButton.h"
 
-#include "ui/zc/ThemeColor.h"
+#include "ui/zc/Theme.h"
 
-const QString PrimaryButton::QSS = ThemeColor::replaceColors(R"(
+const QString PrimaryButton::QSS = theme::replaceColors(R"(
 PrimaryButton {
   color: PRIMARY_COLOR_800;
   background-color: PRIMARY_COLOR_100;

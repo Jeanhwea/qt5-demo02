@@ -4,7 +4,7 @@
 #include <QHash>
 #include <QString>
 
-namespace ThemeColor {
+namespace theme {
 constexpr const char *PRIMARY_COLOR_050 = "#E3F2FD";
 constexpr const char *PRIMARY_COLOR_100 = "#BBDEFB";
 constexpr const char *PRIMARY_COLOR_200 = "#90CAF9";
@@ -36,6 +36,6 @@ inline QString replaceColors(const QString &qss) {
   return result;
 }
 
-} // namespace ThemeColor
+} // namespace theme
 
 #endif /* End of _THEMECOLOR_H_ */
