@@ -5,8 +5,6 @@
 #include "ui/jx/JxPushButton.h"
 #include "util.h"
 
-#include <QDebug>
-
 const QString MainWindow::QSS = R"(
 MainWindow {
   background-color: none;

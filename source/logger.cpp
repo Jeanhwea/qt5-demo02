@@ -2,7 +2,6 @@
 
 #include "consts.h"
 
-#include <QDebug>
 #include <QDir>
 
 Logger *Logger::m_instance = nullptr;
