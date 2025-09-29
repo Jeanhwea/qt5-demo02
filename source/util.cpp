@@ -11,5 +11,3 @@ long long Util::getCurrentTimestamp() {
 
   return seconds.count();
 }
-
-void Util::info(const QString &msg) { qDebug() << msg; }
