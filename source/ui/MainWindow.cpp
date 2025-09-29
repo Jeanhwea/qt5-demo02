@@ -10,6 +10,10 @@ const QString MainWindow::QSS = R"(
 MainWindow {
   background-color: none;
 }
+
+MainWindow JxLabel {
+  qproperty-alignment: 'AlignCenter';
+}
 )";
 
 MainWindow::MainWindow(QWidget *parent)
@@ -30,7 +34,7 @@ void MainWindow::initUI() {
 
   JxLabel *text01 = new JxLabel(&m_widget);
   text01->setText("xxx");
-  text01->setAlignment(Qt::AlignCenter);
+  //text01->setAlignment(Qt::AlignCenter);
   m_layout.addWidget(text01);
 
   JxPushButton *btn01 = new JxPushButton(&m_widget);
