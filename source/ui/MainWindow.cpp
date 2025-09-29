@@ -8,14 +8,16 @@
 
 const QString MainWindow::QSS = theme::replaceVariables(R"(
 MainWindow {
-  background-color: none;
+  background-color: VAR_COLOR_WHITE;
 }
 
 MainWindow * {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 MainWindow JxLabel {
+  color: VAR_COLOR_A_500;
+  font-weight: bold;
   qproperty-alignment: 'AlignCenter';
 }
 )");

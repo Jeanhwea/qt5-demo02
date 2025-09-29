@@ -53,6 +53,8 @@ const static QHash<QString, QString> variableMap = {
     {"VAR_COLOR_B_700", SYSTEM_COLOR_B_700},
     {"VAR_COLOR_B_800", SYSTEM_COLOR_B_800},
     {"VAR_COLOR_B_900", SYSTEM_COLOR_B_900},
+    {"VAR_COLOR_BLACK", SYSTEM_COLOR_BLACK},
+    {"VAR_COLOR_WHITE", SYSTEM_COLOR_WHITE},
 };
 
 inline QString replaceVariables(const QString &qss) {
