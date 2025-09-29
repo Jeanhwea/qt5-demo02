@@ -1,6 +1,6 @@
-#include "ui/zc/PrimaryButton.h"
+#include "ui/my/PrimaryButton.h"
 
-#include "ui/zc/Theme.h"
+#include "ui/my/Theme.h"
 
 const QString PrimaryButton::QSS = theme::replaceVariables(R"(
 PrimaryButton {

@@ -4,8 +4,8 @@
 #include "base/util.h"
 #include "ui/jx/JxHBoxLayout.h"
 #include "ui/jx/JxLabel.h"
-#include "ui/zc/PrimaryButton.h"
-#include "ui/zc/Theme.h"
+#include "ui/my/PrimaryButton.h"
+#include "ui/my/Theme.h"
 
 const QString MainWindow::QSS = theme::replaceVariables(R"(
 MainWindow {
