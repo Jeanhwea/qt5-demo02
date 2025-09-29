@@ -70,8 +70,8 @@ inline QString getColor(ColorLevel level) {
 
 inline QString replaceColors(const QString &qss) {
   QString result = qss;
-  for (const auto &[key, value] : colorMap.asKeyValueRange()) {
-    result.replace(key, value);
+  for (auto it = colorMap.constBegin(); it != colorMap.constEnd(); ++it) {
+    result.replace(it.key(), it.value());
   }
   return result;
 }
