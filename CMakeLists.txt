@@ -34,6 +34,7 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 # 头文件
 set(HEADERS
+  "include/app/Application.h"
   "include/base/consts.h"
   "include/base/logger.h"
   "include/base/util.h"
@@ -49,9 +50,9 @@ set(HEADERS
 
 # 源文件
 set(SOURCES
+  "source/app/Application.cpp"
   "source/base/logger.cpp"
   "source/base/util.cpp"
-  "source/main.cpp"
   "source/ui/MainWindow.cpp"
   "source/ui/jx/JxHBoxLayout.cpp"
   "source/ui/jx/JxLabel.cpp"
@@ -59,12 +60,13 @@ set(SOURCES
   "source/ui/jx/JxVBoxLayout.cpp"
   "source/ui/jx/JxWidget.cpp"
   "source/ui/zc/PrimaryButton.cpp"
+  "source/main.cpp"
 )
 
 # 添加可执行文件
 add_executable(demo02
     ${SOURCES}
-    ${HEADERS})
+    ${HEADERS} "source/app/Application.cpp")
 
 if(WIN32)
   set_target_properties(demo02 PROPERTIES
