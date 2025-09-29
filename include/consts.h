@@ -1,6 +1,8 @@
 #ifndef _CONSTS_H_
 #define _CONSTS_H_
 
+#include <QString>
+
 namespace Color {
 const QString WHITE = "\033[37m";
 const QString GREEN = "\033[32m";
