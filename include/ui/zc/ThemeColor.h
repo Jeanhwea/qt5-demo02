@@ -28,7 +28,13 @@ const static QHash<QString, QString> colorMap = {
     {"PRIMARY_COLOR_800", PRIMARY_COLOR_800},
     {"PRIMARY_COLOR_900", PRIMARY_COLOR_900}};
 
-QString replaceColors(const QString &qss);
+inline QString replaceColors(const QString &qss) {
+  QString result = qss;
+  for (auto it = colorMap.constBegin(); it != colorMap.constEnd(); ++it) {
+    result.replace(it.key(), it.value());
+  }
+  return result;
+}
 
 } // namespace ThemeColor
 
