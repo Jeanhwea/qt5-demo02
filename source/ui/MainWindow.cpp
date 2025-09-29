@@ -9,7 +9,7 @@
 
 const QString MainWindow::QSS = theme::replaceVariables(R"(
 MainWindow {
-  background-color: VAR_COLOR_WHITE;
+  background-color: SYM_COLOR_WHITE;
 }
 
 MainWindow * {
@@ -17,7 +17,7 @@ MainWindow * {
 }
 
 MainWindow JxLabel {
-  color: VAR_COLOR_A_500;
+  color: SYM_COLOR_A_500;
   font-weight: bold;
   qproperty-alignment: 'AlignCenter';
 }

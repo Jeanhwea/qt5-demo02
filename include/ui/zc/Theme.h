@@ -32,34 +32,34 @@ constexpr const char *SYSTEM_COLOR_B_900 = "#004D40";
 constexpr const char *SYSTEM_COLOR_BLACK = "#000000";
 constexpr const char *SYSTEM_COLOR_WHITE = "#FFFFFF";
 
-const static QHash<QString, QString> variableMap = {
-    {"VAR_COLOR_A_050", SYSTEM_COLOR_A_050},
-    {"VAR_COLOR_A_100", SYSTEM_COLOR_A_100},
-    {"VAR_COLOR_A_200", SYSTEM_COLOR_A_200},
-    {"VAR_COLOR_A_300", SYSTEM_COLOR_A_300},
-    {"VAR_COLOR_A_400", SYSTEM_COLOR_A_400},
-    {"VAR_COLOR_A_500", SYSTEM_COLOR_A_500},
-    {"VAR_COLOR_A_600", SYSTEM_COLOR_A_600},
-    {"VAR_COLOR_A_700", SYSTEM_COLOR_A_700},
-    {"VAR_COLOR_A_800", SYSTEM_COLOR_A_800},
-    {"VAR_COLOR_A_900", SYSTEM_COLOR_A_900},
-    {"VAR_COLOR_B_050", SYSTEM_COLOR_B_050},
-    {"VAR_COLOR_B_100", SYSTEM_COLOR_B_100},
-    {"VAR_COLOR_B_200", SYSTEM_COLOR_B_200},
-    {"VAR_COLOR_B_300", SYSTEM_COLOR_B_300},
-    {"VAR_COLOR_B_400", SYSTEM_COLOR_B_400},
-    {"VAR_COLOR_B_500", SYSTEM_COLOR_B_500},
-    {"VAR_COLOR_B_600", SYSTEM_COLOR_B_600},
-    {"VAR_COLOR_B_700", SYSTEM_COLOR_B_700},
-    {"VAR_COLOR_B_800", SYSTEM_COLOR_B_800},
-    {"VAR_COLOR_B_900", SYSTEM_COLOR_B_900},
-    {"VAR_COLOR_BLACK", SYSTEM_COLOR_BLACK},
-    {"VAR_COLOR_WHITE", SYSTEM_COLOR_WHITE},
+const static QHash<QString, QString> symbolMap = {
+    {"SYM_COLOR_A_050", SYSTEM_COLOR_A_050},
+    {"SYM_COLOR_A_100", SYSTEM_COLOR_A_100},
+    {"SYM_COLOR_A_200", SYSTEM_COLOR_A_200},
+    {"SYM_COLOR_A_300", SYSTEM_COLOR_A_300},
+    {"SYM_COLOR_A_400", SYSTEM_COLOR_A_400},
+    {"SYM_COLOR_A_500", SYSTEM_COLOR_A_500},
+    {"SYM_COLOR_A_600", SYSTEM_COLOR_A_600},
+    {"SYM_COLOR_A_700", SYSTEM_COLOR_A_700},
+    {"SYM_COLOR_A_800", SYSTEM_COLOR_A_800},
+    {"SYM_COLOR_A_900", SYSTEM_COLOR_A_900},
+    {"SYM_COLOR_B_050", SYSTEM_COLOR_B_050},
+    {"SYM_COLOR_B_100", SYSTEM_COLOR_B_100},
+    {"SYM_COLOR_B_200", SYSTEM_COLOR_B_200},
+    {"SYM_COLOR_B_300", SYSTEM_COLOR_B_300},
+    {"SYM_COLOR_B_400", SYSTEM_COLOR_B_400},
+    {"SYM_COLOR_B_500", SYSTEM_COLOR_B_500},
+    {"SYM_COLOR_B_600", SYSTEM_COLOR_B_600},
+    {"SYM_COLOR_B_700", SYSTEM_COLOR_B_700},
+    {"SYM_COLOR_B_800", SYSTEM_COLOR_B_800},
+    {"SYM_COLOR_B_900", SYSTEM_COLOR_B_900},
+    {"SYM_COLOR_BLACK", SYSTEM_COLOR_BLACK},
+    {"SYM_COLOR_WHITE", SYSTEM_COLOR_WHITE},
 };
 
 inline QString replaceVariables(const QString &qss) {
   QString result = qss;
-  for (auto it = variableMap.constBegin(); it != variableMap.constEnd(); ++it) {
+  for (auto it = symbolMap.constBegin(); it != symbolMap.constEnd(); ++it) {
     result.replace(it.key(), it.value());
   }
   return result;
