@@ -28,6 +28,9 @@ constexpr const char *SYSTEM_COLOR_B_600 = "#00897B";
 constexpr const char *SYSTEM_COLOR_B_700 = "#00796B";
 constexpr const char *SYSTEM_COLOR_B_800 = "#00695C";
 constexpr const char *SYSTEM_COLOR_B_900 = "#004D40";
+// Common Colors: Green
+constexpr const char *SYSTEM_COLOR_BLACK = "#000000";
+constexpr const char *SYSTEM_COLOR_WHITE = "#FFFFFF";
 
 const static QHash<QString, QString> variableMap = {
     {"VAR_COLOR_A_050", SYSTEM_COLOR_A_050},
