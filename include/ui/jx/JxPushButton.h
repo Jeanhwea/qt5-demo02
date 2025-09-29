@@ -1,5 +1,5 @@
-#ifndef JXPUSHBUTTON_H
-#define JXPUSHBUTTON_H
+#ifndef _JXPUSHBUTTON_H_
+#define _JXPUSHBUTTON_H_
 
 #include "ui/jx/JxWidget.h"
 
@@ -16,4 +16,4 @@ private:
   static const QString QSS;
 };
 
-#endif // JXPUSHBUTTON_H
+#endif /* End of _JXPUSHBUTTON_H_ */
