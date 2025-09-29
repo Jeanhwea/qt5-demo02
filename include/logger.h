@@ -8,7 +8,7 @@
 #include <QString>
 #include <QTextStream>
 
-enum LogLevel { Debug, Info, Warning, Error, Fatal };
+enum LogLevel { Debug, Info, Warn, Error, Fatal };
 
 class Logger : public QObject {
   Q_OBJECT
@@ -20,15 +20,11 @@ public:
   void log(LogLevel level, const QString &message, const char *file = nullptr,
            int line = 0);
 
-#define LOG_DEBUG(msg)                                                         \
-  Logger::getInstance()->log(Debug, msg, __FILE__, __LINE__)
-#define LOG_INFO(msg) Logger::getInstance()->log(Info, msg, __FILE__, __LINE__)
-#define LOG_WARN(msg)                                                          \
-  Logger::getInstance()->log(Warning, msg, __FILE__, __LINE__)
-#define LOG_ERROR(msg)                                                         \
-  Logger::getInstance()->log(Error, msg, __FILE__, __LINE__)
-#define LOG_FATAL(msg)                                                         \
-  Logger::getInstance()->log(Fatal, msg, __FILE__, __LINE__)
+#define LOG_D(msg) Logger::getInstance()->log(Debug, msg, __FILE__, __LINE__)
+#define LOG_I(msg) Logger::getInstance()->log(Info, msg, __FILE__, __LINE__)
+#define LOG_W(msg) Logger::getInstance()->log(Warn, msg, __FILE__, __LINE__)
+#define LOG_E(msg) Logger::getInstance()->log(Error, msg, __FILE__, __LINE__)
+#define LOG_F(msg) Logger::getInstance()->log(Fatal, msg, __FILE__, __LINE__)
 
 private:
   explicit Logger(QObject *parent = nullptr);

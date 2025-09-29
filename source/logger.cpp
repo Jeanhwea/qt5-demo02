@@ -108,7 +108,7 @@ QString Logger::logLevelToString(LogLevel level) {
     return "DEBUG";
   case Info:
     return "INFO";
-  case Warning:
+  case Warn:
     return "WARNING";
   case Error:
     return "ERROR";
@@ -120,13 +120,12 @@ QString Logger::logLevelToString(LogLevel level) {
 }
 
 QString Logger::logLevelToColor(LogLevel level) {
-  // ANSI 颜色代码，用于控制台彩色输出
   switch (level) {
   case Debug:
     return "\033[37m"; // 白色
   case Info:
     return "\033[32m"; // 绿色
-  case Warning:
+  case Warn:
     return "\033[33m"; // 黄色
   case Error:
     return "\033[31m"; // 红色
