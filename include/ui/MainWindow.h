@@ -17,7 +17,7 @@ public:
 private:
   void initUI();
   void onBtnClick();
-  void onBtnClick2();
+  void onBtnClick022();
 
   static const QString QSS;
 
