@@ -1,4 +1,4 @@
-#include "ui/MainWindow.h"
+#include "app/MainWindow.h"
 
 #include "base/logger.h"
 #include "base/util.h"

@@ -1,8 +1,8 @@
 #include "app/Application.h"
 
+#include "app/MainWindow.h"
 #include "base/consts.h"
 #include "base/logger.h"
-#include "ui/MainWindow.h"
 
 Application::Application(int &argc, char **argv)
     : QApplication(argc, argv), m_win() {}

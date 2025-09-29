@@ -1,7 +1,7 @@
 #ifndef _APPLICATION_H_
 #define _APPLICATION_H_
 
-#include "ui/MainWindow.h"
+#include "app/MainWindow.h"
 
 #include <QApplication>
 
