@@ -34,22 +34,23 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 # 头文件
 set(HEADERS
-  "include/consts.h"
-  "include/logger.h"
+  "include/base/consts.h"
+  "include/base/logger.h"
+  "include/base/util.h"
   "include/ui/MainWindow.h"
   "include/ui/jx/JxHBoxLayout.h"
   "include/ui/jx/JxLabel.h"
   "include/ui/jx/JxPushButton.h"
   "include/ui/jx/JxVBoxLayout.h"
   "include/ui/jx/JxWidget.h"
-  "include/ui/zc/Theme.h"
   "include/ui/zc/PrimaryButton.h"
-  "include/util.h"
+  "include/ui/zc/Theme.h"
 )
 
 # 源文件
 set(SOURCES
-  "source/logger.cpp"
+  "source/base/logger.cpp"
+  "source/base/util.cpp"
   "source/main.cpp"
   "source/ui/MainWindow.cpp"
   "source/ui/jx/JxHBoxLayout.cpp"
@@ -58,8 +59,6 @@ set(SOURCES
   "source/ui/jx/JxVBoxLayout.cpp"
   "source/ui/jx/JxWidget.cpp"
   "source/ui/zc/PrimaryButton.cpp"
-  
-  "source/util.cpp"
 )
 
 # 添加可执行文件
