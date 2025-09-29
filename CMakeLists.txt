@@ -58,6 +58,7 @@ set(SOURCES
   "source/ui/jx/JxVBoxLayout.cpp"
   "source/ui/jx/JxWidget.cpp"
   "source/ui/zc/PrimaryButton.cpp"
+  "source/ui/zc/ThemeColor.cpp"
   "source/util.cpp"
 )
 
