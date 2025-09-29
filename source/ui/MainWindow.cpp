@@ -36,7 +36,7 @@ void MainWindow::initUI() {
   m_layout.setContentsMargins(5, 5, 5, 5);
 
   JxLabel *text01 = new JxLabel(&m_widget);
-  text01->setText("Ê¾Àý³ÌÐò002");
+  text01->setText("ç¤ºä¾‹ç¨‹åº002");
   // text01->setAlignment(Qt::AlignCenter);
   m_layout.addWidget(text01);
 
