@@ -8,4 +8,4 @@ dist:
 
 format:
 	find include -type f | xargs -I {} clang-format -i {}
-	find src -type f | xargs -I {} clang-format -i {}
+	find source -type f | xargs -I {} clang-format -i {}
