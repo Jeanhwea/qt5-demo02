@@ -2,17 +2,14 @@
 
 #include "ui/zc/ThemeColor.h"
 
-const QString PrimaryButton::QSS =
-    QString(R"(
+const QString PrimaryButton::QSS = R"(
 PrimaryButton {
-  color: %1;
-  background-color: %2;
+  color: PRIMARY_COLOR_800;
+  background-color: PRIMARY_COLOR_100;
   height: 30px;
   border-radius: 4px;
-  border: 1px solid %3;
-})")
-        .arg(ThemeColor::PRIMARY_COLOR_800, ThemeColor::PRIMARY_COLOR_100,
-             ThemeColor::PRIMARY_COLOR_800);
+  border: 1px solid PRIMARY_COLOR_500;
+})";
 
 PrimaryButton::PrimaryButton(JxWidget *parent) : JxPushButton(parent) {
   initUI();
