@@ -2,7 +2,7 @@
 
 #include "logger.h"
 #include "ui/jx/JxLabel.h"
-#include "ui/jx/JxPushButton.h"
+#include "ui/zc/PrimaryButton.h"
 #include "util.h"
 
 const QString MainWindow::QSS = R"(
@@ -39,14 +39,14 @@ void MainWindow::initUI() {
   // text01->setAlignment(Qt::AlignCenter);
   m_layout.addWidget(text01);
 
-  JxPushButton *btn01 = new JxPushButton(&m_widget);
+  PrimaryButton *btn01 = new PrimaryButton(&m_widget);
   btn01->setText("Click Me");
-  btn01->connect(btn01, &JxPushButton::clicked, this, &MainWindow::onBtnClick);
+  btn01->connect(btn01, &PrimaryButton::clicked, this, &MainWindow::onBtnClick);
   m_layout.addWidget(btn01);
 
-  JxPushButton *btn02 = new JxPushButton(&m_widget);
+  PrimaryButton *btn02 = new PrimaryButton(&m_widget);
   btn02->setText("Click Me 2");
-  btn02->connect(btn02, &JxPushButton::clicked, this,
+  btn02->connect(btn02, &PrimaryButton::clicked, this,
                  &MainWindow::onBtnClick02);
   m_layout.addWidget(btn02);
 
