@@ -4,6 +4,7 @@
 #include <QHash>
 #include <QMutex>
 #include <QMutexLocker>
+#include <QScopedPointer>
 #include <QString>
 
 class Theme {
