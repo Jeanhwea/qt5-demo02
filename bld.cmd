@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 REM Set default build configuration to Release
-set "CONFIG=Release"
+set "CONFIG=Debug"
 
 REM Allow overriding build configuration via command line argument
 if not "%~1"=="" (
