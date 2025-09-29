@@ -29,7 +29,6 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow() {}
 
 void MainWindow::initUI() {
-  // åˆå§‹åŒ–ä¸»çª—å£
   this->setWindowTitle("DEMO");
   this->setGeometry(100, 100, 800, 600);
   this->setContentsMargins(0, 0, 0, 0);
@@ -37,7 +36,7 @@ void MainWindow::initUI() {
   m_layout.setContentsMargins(5, 5, 5, 5);
 
   JxLabel *text01 = new JxLabel(&m_widget);
-  text01->setText("xxx");
+  text01->setText("Ê¾Àý³ÌÐò002");
   // text01->setAlignment(Qt::AlignCenter);
   m_layout.addWidget(text01);
 

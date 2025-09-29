@@ -1,5 +1,7 @@
 #include "logger.h"
 
+#include "consts.h"
+
 #include <QDebug>
 #include <QDir>
 
@@ -122,16 +124,16 @@ QString Logger::logLevelToString(LogLevel level) {
 QString Logger::logLevelToColor(LogLevel level) {
   switch (level) {
   case Debug:
-    return "\033[37m"; // 白色
+    return Color::WHITE;
   case Info:
-    return "\033[32m"; // 绿色
+    return Color::GREEN;
   case Warn:
-    return "\033[33m"; // 黄色
+    return Color::YELLOW;
   case Error:
-    return "\033[31m"; // 红色
+    return Color::RED;
   case Fatal:
-    return "\033[1;31m"; // 亮红色
+    return Color::BRIGHT_RED;
   default:
-    return "\033[0m"; // 默认颜色
+    return Color::DEFAULT;
   }
 }
