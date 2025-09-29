@@ -7,7 +7,7 @@
 class Theme {
 public:
   static Theme &instance();
-  QString replaceSymbols(const QString &input) const;
+  QString replace(const QString &input) const;
 
 private:
   Theme();

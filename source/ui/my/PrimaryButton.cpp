@@ -2,7 +2,7 @@
 
 #include "ui/my/Theme.h"
 
-const QString PrimaryButton::QSS = Theme::instance().replaceSymbols(R"(
+const QString PrimaryButton::QSS = Theme::instance().replace(R"(
 PrimaryButton {
   color: SYM_COLOR_A_800;
   background-color: SYM_COLOR_A_050;

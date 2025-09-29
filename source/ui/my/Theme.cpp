@@ -11,7 +11,7 @@ Theme &Theme::instance() {
   return *inst.data();
 }
 
-QString Theme::replaceSymbols(const QString &input) const {
+QString Theme::replace(const QString &input) const {
   QString result = input;
   for (const auto &key : m_symbols.keys()) {
     result.replace(key, m_symbols.value(key));
