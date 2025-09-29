@@ -2,6 +2,7 @@
 
 #include "consts.h"
 
+#include <QDebug>
 #include <QDir>
 
 Logger *Logger::m_instance = nullptr;
@@ -47,6 +48,8 @@ void Logger::setLogFilePath(const QString &path) {
   } else {
     m_fileStream.setDevice(&m_logFile);
   }
+
+  qDebug() << "Log to file:" << path;
 }
 
 void Logger::setConsoleOutput(bool enable) {
