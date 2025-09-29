@@ -35,7 +35,6 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 # 头文件
 set(HEADERS
   "include/consts.h"
-  "include/components.h"
   "include/logger.h"
   "include/ui/MainWindow.h"
   "include/ui/jx/JxHBoxLayout.h"

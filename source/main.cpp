@@ -1,5 +1,6 @@
-#include "components.h"
+
 #include "logger.h"
+#include "ui/MainWindow.h"
 
 #include <QApplication>
 

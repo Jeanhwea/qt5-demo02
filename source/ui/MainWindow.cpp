@@ -1,7 +1,8 @@
 #include "ui/MainWindow.h"
 
-#include "components.h"
 #include "logger.h"
+#include "ui/jx/JxLabel.h"
+#include "ui/jx/JxPushButton.h"
 #include "util.h"
 
 #include <QDebug>
