@@ -12,4 +12,10 @@ const QString BRIGHT_RED = "\033[1;31m";
 const QString DEFAULT = "\033[0m";
 }; // namespace Color
 
+namespace ErrorCode {
+const int Success = 0;
+const int InitError = 1;
+const int Panic = 2;
+}; // namespace ErrorCode
+
 #endif /* End of _CONSTS_H_ */

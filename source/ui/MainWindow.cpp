@@ -1,10 +1,11 @@
 #include "ui/MainWindow.h"
 
-#include "logger.h"
+#include "base/logger.h"
+#include "base/util.h"
+#include "ui/jx/JxHBoxLayout.h"
 #include "ui/jx/JxLabel.h"
 #include "ui/zc/PrimaryButton.h"
 #include "ui/zc/Theme.h"
-#include "util.h"
 
 const QString MainWindow::QSS = theme::replaceVariables(R"(
 MainWindow {
@@ -42,20 +43,23 @@ void MainWindow::initUI() {
   // text01->setAlignment(Qt::AlignCenter);
   m_layout.addWidget(text01);
 
+  JxHBoxLayout *ctn01 = new JxHBoxLayout();
+
   PrimaryButton *btn01 = new PrimaryButton(&m_widget);
   btn01->setText("Click Me");
   btn01->connect(btn01, &PrimaryButton::clicked, this, &MainWindow::onBtnClick);
-  m_layout.addWidget(btn01);
+  ctn01->addWidget(btn01);
 
   PrimaryButton *btn02 = new PrimaryButton(&m_widget);
   btn02->setText("Click Me 2");
   btn02->connect(btn02, &PrimaryButton::clicked, this,
                  &MainWindow::onBtnClick02);
-  m_layout.addWidget(btn02);
+  ctn01->addWidget(btn02);
+  ctn01->addStretch();
 
+  m_layout.addLayout(ctn01);
   m_layout.addStretch();
 
-  m_widget.setLayout(&m_layout);
   this->setCentralWidget(&m_widget);
 }
 

@@ -7,6 +7,7 @@ PrimaryButton {
   color: VAR_COLOR_A_800;
   background-color: VAR_COLOR_A_050;
   min-height: 28px;
+  min-width: 100px;
   border-radius: 4px;
   border: 1px solid VAR_COLOR_A_500;
 }

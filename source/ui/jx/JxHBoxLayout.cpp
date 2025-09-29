@@ -2,6 +2,6 @@
 
 #include "ui/jx/JxWidget.h"
 
-JxHBoxLayout::JxHBoxLayout(JxWidget *parent) { initUI(); }
+JxHBoxLayout::JxHBoxLayout(JxWidget *parent) : QHBoxLayout(parent) { initUI(); }
 
 void JxHBoxLayout::initUI() { this->setContentsMargins(0, 0, 0, 0); }
