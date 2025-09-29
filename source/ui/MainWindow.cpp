@@ -43,22 +43,21 @@ void MainWindow::initUI() {
   // text01->setAlignment(Qt::AlignCenter);
   m_layout.addWidget(text01);
 
-  JxWidget *ctn01 = new JxWidget(&m_widget);
-  JxHBoxLayout *ctn01_layout = new JxHBoxLayout(ctn01);
+  JxHBoxLayout *ctn01 = new JxHBoxLayout();
 
   PrimaryButton *btn01 = new PrimaryButton(&m_widget);
   btn01->setText("Click Me");
   btn01->connect(btn01, &PrimaryButton::clicked, this, &MainWindow::onBtnClick);
-  ctn01_layout->addWidget(btn01);
+  ctn01->addWidget(btn01);
 
   PrimaryButton *btn02 = new PrimaryButton(&m_widget);
   btn02->setText("Click Me 2");
   btn02->connect(btn02, &PrimaryButton::clicked, this,
                  &MainWindow::onBtnClick02);
-  ctn01_layout->addWidget(btn02);
-  ctn01_layout->addStretch();
+  ctn01->addWidget(btn02);
+  ctn01->addStretch();
 
-  m_layout.addWidget(ctn01);
+  m_layout.addLayout(ctn01);
   m_layout.addStretch();
 
   this->setCentralWidget(&m_widget);
