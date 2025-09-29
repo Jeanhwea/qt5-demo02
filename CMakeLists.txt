@@ -60,6 +60,7 @@ set(SOURCES
   "source/ui/jx/JxVBoxLayout.cpp"
   "source/ui/jx/JxWidget.cpp"
   "source/ui/my/PrimaryButton.cpp"
+  "source/ui/my/Theme.cpp"
   "source/main.cpp"
 )
 
