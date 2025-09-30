@@ -5,6 +5,7 @@
 #include "ui/jx/JxHBoxLayout.h"
 #include "ui/jx/JxLabel.h"
 #include "ui/my/PrimaryButton.h"
+#include "ui/my/SecondaryButton.h"
 #include "ui/my/Theme.h"
 
 const QString MainWindow::QSS = Theme::instance().replace(R"(
@@ -50,9 +51,9 @@ void MainWindow::initUI() {
   btn01->connect(btn01, &PrimaryButton::clicked, this, &MainWindow::onBtnClick01);
   ctn01->addWidget(btn01);
 
-  PrimaryButton *btn02 = new PrimaryButton(&m_widget);
+  SecondaryButton *btn02 = new SecondaryButton(&m_widget);
   btn02->setText("Click Me 2");
-  btn02->connect(btn02, &PrimaryButton::clicked, this, &MainWindow::onBtnClick02);
+  btn02->connect(btn02, &SecondaryButton::clicked, this, &MainWindow::onBtnClick02);
   ctn01->addWidget(btn02);
   ctn01->addStretch();
 
@@ -63,9 +64,9 @@ void MainWindow::initUI() {
 }
 
 void MainWindow::onBtnClick01() {
-  LOG_D(QString("Button clicked at %1").arg(util::getCurrentTimestamp()));
+  LOG_I(QString("Button clicked at %1").arg(util::getCurrentTimestamp()));
 }
 
 void MainWindow::onBtnClick02() {
-  LOG_I(QString("Button clicked at %1").arg(util::getCurrentTimestamp()));
+  LOG_D(QString("Button clicked at %1").arg(util::getCurrentTimestamp()));
 }
