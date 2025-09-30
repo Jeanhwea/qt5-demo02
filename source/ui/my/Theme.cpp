@@ -14,11 +14,11 @@ Theme &Theme::instance() {
 }
 
 QString Theme::replace(const QString &input) const {
-  QString result = input;
+  QString qss = input;
   for (const auto &key : m_symbols.keys()) {
-    result.replace(key, m_symbols.value(key));
+    qss.replace(key, m_symbols.value(key));
   }
-  return result;
+  return qss;
 }
 
 Theme::Theme() {
