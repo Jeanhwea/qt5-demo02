@@ -42,7 +42,7 @@ Theme::Theme() {
   m_symbols.insert("SYM_COLOR_B_700", "#00796B");
   m_symbols.insert("SYM_COLOR_B_800", "#00695C");
   m_symbols.insert("SYM_COLOR_B_900", "#004D40");
-  // Common Colors: Green
+  // Common Colors: Black & White
   m_symbols.insert("SYM_COLOR_BLACK", "#000000");
   m_symbols.insert("SYM_COLOR_WHITE", "#FFFFFF");
 }
