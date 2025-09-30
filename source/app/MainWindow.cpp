@@ -47,7 +47,7 @@ void MainWindow::initUI() {
 
   PrimaryButton *btn01 = new PrimaryButton(&m_widget);
   btn01->setText("Click Me");
-  btn01->connect(btn01, &PrimaryButton::clicked, this, &MainWindow::onBtnClick);
+  btn01->connect(btn01, &PrimaryButton::clicked, this, &MainWindow::onBtnClick01);
   ctn01->addWidget(btn01);
 
   PrimaryButton *btn02 = new PrimaryButton(&m_widget);
@@ -62,7 +62,7 @@ void MainWindow::initUI() {
   this->setCentralWidget(&m_widget);
 }
 
-void MainWindow::onBtnClick() {
+void MainWindow::onBtnClick01() {
   LOG_D(QString("Button clicked at %1").arg(util::getCurrentTimestamp()));
 }
 
