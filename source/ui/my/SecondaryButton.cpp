@@ -12,7 +12,7 @@ SecondaryButton {
   border: 1px solid SYM_COLOR_Z_500;
 }
 SecondaryButton::hover {
-  background-color: SYM_COLOR_Z_100;
+  background-color: SYM_COLOR_Z_200;
 }
 SecondaryButton::pressed {
   background-color: SYM_COLOR_Z_300;
