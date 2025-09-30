@@ -23,8 +23,8 @@ MainWindow JxLabel {
 }
 )");
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent), m_widget(this), m_layout(&m_widget) {
+MainWindow::MainWindow(JxWidget *parent)
+    : JxMainWindow(parent), m_widget(this), m_layout(&m_widget) {
   this->setStyleSheet(QSS);
   initUI();
 }
