@@ -1,7 +1,9 @@
 #include "ui/my/Theme.h"
 
+#include <QList>
 #include <QMutex>
 #include <QMutexLocker>
+#include <QPair>
 #include <QScopedPointer>
 
 Theme &Theme::instance() {
