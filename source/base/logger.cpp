@@ -2,6 +2,7 @@
 
 #include "base/consts.h"
 
+#include <QApplication>
 #include <QDebug>
 #include <QDir>
 
