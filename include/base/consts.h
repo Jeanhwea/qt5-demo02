@@ -14,8 +14,10 @@ inline constexpr const char *DEFAULT = "\033[0m";
 
 namespace errcode {
 inline constexpr int SUCCESS = 0;
-inline constexpr int INIT_ERROR = 1;
-inline constexpr int PANIC = 2;
+inline constexpr int BAD_INPUT = 1;
+inline constexpr int SYS_PANIC = 2;
+inline constexpr int INIT_ERROR = 10;
+inline constexpr int FATAL_ERROR = 11;
 }; // namespace errcode
 
 #endif /* End of _CONSTS_H_ */

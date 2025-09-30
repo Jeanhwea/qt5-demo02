@@ -79,7 +79,7 @@ void Logger::log(LogLevel level, const QString &message, const char *file, int l
   }
 
   if (level == Fatal) {
-    qApp->exit(1);
+    qApp->exit(errcode::FATAL_ERROR);
   }
 }
 
