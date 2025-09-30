@@ -22,7 +22,7 @@ QString Theme::replace(const QString &input) const {
 }
 
 Theme::Theme() {
-  const QList<QPair<QString, QString>> colorPairs = {
+  const QList<QPair<QString, QString>> symbols = {
       // Primary Colors: Blue
       {"SYM_COLOR_A_050", "#E3F2FD"},
       {"SYM_COLOR_A_100", "#BBDEFB"},
@@ -61,7 +61,7 @@ Theme::Theme() {
       {"SYM_COLOR_WHITE", "#FFFFFF"},
   };
 
-  for (const auto &pair : colorPairs) {
+  for (const auto &pair : symbols) {
     m_symbols.insert(pair.first, pair.second);
   }
 }
