@@ -20,7 +20,7 @@ QString Theme::replace(const QString &input) const {
 }
 
 Theme::Theme() {
-  // Primary Colors: Bule
+  // Primary Colors: Blue
   m_symbols.insert("SYM_COLOR_A_050", "#E3F2FD");
   m_symbols.insert("SYM_COLOR_A_100", "#BBDEFB");
   m_symbols.insert("SYM_COLOR_A_200", "#90CAF9");
