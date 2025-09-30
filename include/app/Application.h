@@ -10,7 +10,7 @@ public:
   Application(int &argc, char **argv);
 
 public:
-  int startup();
+  int run();
 
 private:
   bool init();
