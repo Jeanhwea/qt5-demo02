@@ -26,6 +26,7 @@ echo. Formatting header files in include directory...
 for /r "%PROJECT_DIR%\include" %%f in (*.h) do (
     echo.   Processing: %%f
     clang-format -i "%%f"
+    clang-tidy -p build --fix "%%f"
     if errorlevel 1 (
         echo.   Error: Failed to format %%f!
     )

@@ -2,6 +2,7 @@
 
 #include "base/consts.h"
 
+#include <QApplication>
 #include <QDebug>
 #include <QDir>
 
@@ -78,7 +79,7 @@ void Logger::log(LogLevel level, const QString &message, const char *file, int l
   }
 
   if (level == Fatal) {
-    // qApp->exit(1);
+    qApp->exit(errcode::FATAL_ERROR);
   }
 }
 
@@ -117,16 +118,16 @@ QString Logger::logLevelToString(LogLevel level) {
 QString Logger::logLevelToColor(LogLevel level) {
   switch (level) {
   case Debug:
-    return Color::WHITE;
+    return colors::WHITE;
   case Info:
-    return Color::GREEN;
+    return colors::GREEN;
   case Warn:
-    return Color::YELLOW;
+    return colors::YELLOW;
   case Error:
-    return Color::RED;
+    return colors::RED;
   case Fatal:
-    return Color::BRIGHT_RED;
+    return colors::BRIGHT_RED;
   default:
-    return Color::DEFAULT;
+    return colors::DEFAULT;
   }
 }

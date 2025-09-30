@@ -7,6 +7,7 @@
 
 class JxHBoxLayout : public QHBoxLayout {
   Q_OBJECT
+
 public:
   explicit JxHBoxLayout(JxWidget *parent = nullptr);
 

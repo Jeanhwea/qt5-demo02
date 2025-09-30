@@ -46,6 +46,7 @@ set(HEADERS
   "include/ui/jx/JxVBoxLayout.h"
   "include/ui/jx/JxWidget.h"
   "include/ui/my/PrimaryButton.h"
+  "include/ui/my/SecondaryButton.h"
   "include/ui/my/Theme.h"
 )
 
@@ -62,6 +63,7 @@ set(SOURCES
   "source/ui/jx/JxVBoxLayout.cpp"
   "source/ui/jx/JxWidget.cpp"
   "source/ui/my/PrimaryButton.cpp"
+  "source/ui/my/SecondaryButton.cpp"
   "source/ui/my/Theme.cpp"
   "source/main.cpp"
 )

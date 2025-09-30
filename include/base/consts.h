@@ -3,19 +3,21 @@
 
 #include <QString>
 
-namespace Color {
-const QString WHITE = "\033[37m";
-const QString GREEN = "\033[32m";
-const QString YELLOW = "\033[33m";
-const QString RED = "\033[31m";
-const QString BRIGHT_RED = "\033[1;31m";
-const QString DEFAULT = "\033[0m";
-}; // namespace Color
+namespace colors {
+inline constexpr const char *WHITE = "\033[37m";
+inline constexpr const char *GREEN = "\033[32m";
+inline constexpr const char *YELLOW = "\033[33m";
+inline constexpr const char *RED = "\033[31m";
+inline constexpr const char *BRIGHT_RED = "\033[1;31m";
+inline constexpr const char *DEFAULT = "\033[0m";
+}; // namespace colors
 
-namespace ErrorCode {
-const int Success = 0;
-const int InitError = 1;
-const int Panic = 2;
-}; // namespace ErrorCode
+namespace errcode {
+inline constexpr int SUCCESS = 0;
+inline constexpr int BAD_INPUT = 1;
+inline constexpr int SYS_PANIC = 2;
+inline constexpr int INIT_ERROR = 10;
+inline constexpr int FATAL_ERROR = 11;
+}; // namespace errcode
 
 #endif /* End of _CONSTS_H_ */

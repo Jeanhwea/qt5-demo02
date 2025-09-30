@@ -8,7 +8,7 @@ Application::Application(int &argc, char **argv) : QApplication(argc, argv), m_w
 
 int Application::startup() {
   if (!init()) {
-    return ErrorCode::InitError;
+    return errcode::INIT_ERROR;
   }
 
   m_win.show();
