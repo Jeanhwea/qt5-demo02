@@ -5,6 +5,7 @@
 
 class SecondaryButton : public JxPushButton {
   Q_OBJECT
+
 public:
   explicit SecondaryButton(JxWidget *parent = nullptr);
 

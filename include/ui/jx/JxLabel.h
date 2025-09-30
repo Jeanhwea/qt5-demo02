@@ -7,6 +7,7 @@
 
 class JxLabel : public QLabel {
   Q_OBJECT
+
 public:
   explicit JxLabel(JxWidget *parent = nullptr);
 

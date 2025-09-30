@@ -7,6 +7,7 @@
 
 class JxPushButton : public QPushButton {
   Q_OBJECT
+
 public:
   explicit JxPushButton(JxWidget *parent = nullptr);
 

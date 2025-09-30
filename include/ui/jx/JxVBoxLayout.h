@@ -7,6 +7,7 @@
 
 class JxVBoxLayout : public QVBoxLayout {
   Q_OBJECT
+
 public:
   explicit JxVBoxLayout(JxWidget *parent = nullptr);
 

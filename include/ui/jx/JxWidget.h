@@ -5,6 +5,7 @@
 
 class JxWidget : public QWidget {
   Q_OBJECT
+
 public:
   explicit JxWidget(QWidget *parent = nullptr);
 
