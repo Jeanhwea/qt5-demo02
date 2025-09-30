@@ -14,6 +14,9 @@ SecondaryButton {
 SecondaryButton::hover {
   background-color: SYM_COLOR_Z_100;
 }
+SecondaryButton::pressed {
+  background-color: SYM_COLOR_Z_300;
+}
 )");
 
 SecondaryButton::SecondaryButton(JxWidget *parent) : JxPushButton(parent) { initUI(); }

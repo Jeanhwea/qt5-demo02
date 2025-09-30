@@ -14,6 +14,9 @@ PrimaryButton {
 PrimaryButton::hover {
   background-color: SYM_COLOR_A_100;
 }
+PrimaryButton::pressed {
+  background-color: SYM_COLOR_A_300;
+}
 )");
 
 PrimaryButton::PrimaryButton(JxWidget *parent) : JxPushButton(parent) { initUI(); }
