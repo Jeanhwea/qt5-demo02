@@ -1,0 +1,34 @@
+{
+  "configurations": [
+    {
+      "name": "x64-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\build",
+      "variables": [
+        {
+          "name": "CMAKE_CXX_STANDARD",
+          "value": "17",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_CXX_STANDARD_REQUIRED",
+          "value": "ON",
+          "type": "BOOL"
+        },
+        {
+          "name": "CMAKE_EXPORT_COMPILE_COMMANDS",
+          "value": "ON",
+          "type": "BOOL"
+        },
+        {
+          "name": "CMAKE_PREFIX_PATH",
+          "value": "${env:QTDIR}",
+          "type": "PATH"
+        }
+      ],
+      "intelliSenseMode": "windows-msvc-x64"
+    }
+  ]
+}
