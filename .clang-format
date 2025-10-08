@@ -2,3 +2,5 @@ BasedOnStyle: LLVM
 
 IncludeBlocks: Regroup
 ColumnLimit: 98
+StatementMacros:
+- Q_OBJECT
